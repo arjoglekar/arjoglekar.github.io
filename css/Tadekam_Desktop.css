@@ -252,3 +252,25 @@
 	85% {transform: rotateY(180deg);}
 	100% {transform: rotateY(0deg);}
 } */
+
+.columnFooterInfo {
+	text-align : center;
+}
+
+.columnFooterInfoText>div {
+	padding-top:30%;
+}
+
+.columnFooterMenu {
+	margin-left: 2%;
+    padding: 0;
+    margin-right: 2%;
+}
+
+.footerRow2 {
+	padding-left: 10%;
+}
+
+.footerLogo {
+	width : 35%;
+}

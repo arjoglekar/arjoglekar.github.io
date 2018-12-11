@@ -3,11 +3,17 @@ function menuSelected(event,menuID) {
     console.log("event::",event);
     event.stopPropagation();
     var menuSelectorClass="menuOptionTextSelected";
+    var footerMenuSelectorClass="footerMenuSelected";
+    var suffixHamburger = "Hamburger";
+    var suffixFooter = "Footer";
+    var selectedMenu = menuID.replace(suffixHamburger,"").replace(suffixFooter,"");
     $('.' + menuSelectorClass).removeClass(menuSelectorClass);
-    $('#' + menuID).addClass(menuSelectorClass);
-    $('#' + menuID + "Hamburger").addClass(menuSelectorClass);
+    $('.' + footerMenuSelectorClass).removeClass(footerMenuSelectorClass);
+    $('#' + selectedMenu).addClass(menuSelectorClass);
+    $('#' + selectedMenu + suffixHamburger).addClass(menuSelectorClass);
+    $('#' + selectedMenu + suffixFooter).addClass(footerMenuSelectorClass);
     var mainContentSelectorClass="mainContentSelected";
     $('.' + mainContentSelectorClass).removeClass(mainContentSelectorClass);
-    $('#mainContent' + menuID).addClass(mainContentSelectorClass);
+    $('#mainContent' + selectedMenu).addClass(mainContentSelectorClass);
     $('#buttonHamburgerClose').click();
 }

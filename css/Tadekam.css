@@ -140,7 +140,7 @@ body {
 }
 
 .bannerContent {
-	width:100%;
+	/* width:100%; */
 	height:100%;
 	text-align:center;
 	overflow: hidden;
@@ -324,22 +324,10 @@ body {
 	margin : 0;
 }
 
-.colLocation {
-	padding-left : 7%;;
+.columnFooterMenu {
+	cursor : pointer;
 }
 
-.locationDetailRow {
-	line-height:40px;
-}
-
-.footerMenuRow {
-	line-height:40px;
-}
-
-.footerMenuColumn {
-	padding-left : 7%;
-}
-
-.footerMenuLogo {
-	width : 100%;
+.footerMenuSelected {
+	color : #FFFFFF;
 }

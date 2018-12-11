@@ -24,7 +24,7 @@
 	background-color : #000000 !important;
 	opacity:0.8;
 	z-index:100;
-	transition:all 1s ease-in;
+	transition:all 0.6s ease-in;
 	border:0px;
 	min-height:0px;
 }
@@ -118,7 +118,7 @@ color : #996a0e;
 }
 
 .column1 {
-	left: 10%;
+	left: 8%;
     top: 40%;
     text-align: center;
 	/* animation : none; */
