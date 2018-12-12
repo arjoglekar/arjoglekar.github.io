@@ -154,6 +154,7 @@ body {
 	animation: zoomin 15s ease-in infinite;
 	transition: all .5s ease-in-out;
 	z-index:10;
+	height : 100%;
 }
 
 .foreground {

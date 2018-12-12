@@ -190,3 +190,23 @@ z-index: 1;
 	85% {transform: rotateY(180deg);}
 	100% {transform: rotateY(0deg);}
 } */
+
+.columnFooterInfo {
+	text-align : center;
+	padding: 2%;
+}
+
+.columnFooterMenu {
+	margin-left: 2%;
+    padding: 0;
+	margin-right: 2%;
+	text-align : center;
+}
+
+.footerRow2 {
+	padding-left: 10%;
+}
+
+.footerLogo {
+	width : 35%;
+}
