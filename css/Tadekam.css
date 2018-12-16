@@ -195,6 +195,30 @@ body {
 	color : #FFFFFF;
 }
 
+.headerOfContentRow {
+	padding:0;
+	margin:0;
+	font-family: "fontPoppins";
+	text-align:center;
+}
+
+.headerOfContentRow div {
+	padding: 0;
+	margin-right:0;
+	margin-left:0;
+}
+
+.titleContentBorder {
+	border-bottom:1px solid black;
+	margin-top:10%;
+}
+
+.titleContentHeader {
+	margin-top: 4%;
+}
+
+
+
 /* .column1 {
 	left : 6%;
 	top : 42%;
