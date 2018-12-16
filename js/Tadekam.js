@@ -15,5 +15,7 @@ function menuSelected(event,menuID) {
     var mainContentSelectorClass="mainContentSelected";
     $('.' + mainContentSelectorClass).removeClass(mainContentSelectorClass);
     $('#mainContent' + selectedMenu).addClass(mainContentSelectorClass);
-    $('#buttonHamburgerClose').click();
+    if(!menuID.includes(suffixFooter)) {
+        $('#buttonHamburgerClose').click();
+    }
 }
