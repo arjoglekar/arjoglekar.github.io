@@ -211,11 +211,16 @@ body {
 
 .titleContentBorder {
 	border-bottom:1px solid black;
-	margin-top:10%;
+	margin-top:15%;
+	margin-bottom:20%;
 }
 
 .titleContentHeader {
 	margin-top: 4%;
+}
+
+.textRow {
+	margin-top:3%;
 }
 
 
