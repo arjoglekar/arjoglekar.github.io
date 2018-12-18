@@ -2,16 +2,33 @@
 	display : none;
 }
 
+.header {
+	height : 15%;
+}
+
 .banner {
 	height : 50%;
 }
 
 .hamburgerMenu {
 	padding : 0;
+	height: 100%;
 }
 
 .hamburgerButton {
 	float : right;
+	background-color: transparent;
+	border: 0px;
+	font-size: 20px;
+	transition:all 0.2s ease-in-out;
+}
+
+.hamburgerButton > span {
+	color : #996a0e;
+}
+
+.hideHamburgerButton {
+	opacity : 0;
 }
 
 #menuNavbar {
@@ -179,8 +196,8 @@ z-index: 1;
 
 @keyframes flipBannerCard {
 	0% {transform: rotateY(0deg);}
-	25% {transform: rotateY(0deg);}
-	40% {transform: rotateY(180deg);}
+	10% {transform: rotateY(0deg);}
+	30% {transform: rotateY(180deg);}
 	60% {transform: rotateY(0deg);}
 	80% {transform: rotateY(180deg);}
 	100% {transform: rotateY(0deg);}

@@ -1,6 +1,4 @@
 function menuSelected(event,menuID) {
-    console.log("menuSelected::",menuID);
-    console.log("event::",event);
     event.stopPropagation();
     var menuSelectorClass="menuOptionTextSelected";
     var footerMenuSelectorClass="footerMenuSelected";
@@ -18,4 +16,12 @@ function menuSelected(event,menuID) {
     if(!menuID.includes(suffixFooter)) {
         $('#buttonHamburgerClose').click();
     }
+}
+
+function hamburgerOpenClicked() {
+    $('.hamburgerMenu').addClass("hideHamburgerButton");
+}
+
+function hamburgerCloseClicked() {
+    $('.hamburgerMenu').removeClass("hideHamburgerButton");
 }
