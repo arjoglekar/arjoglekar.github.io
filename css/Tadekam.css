@@ -221,6 +221,13 @@ body {
 
 .textRow {
 	margin-top:3%;
+	font-family : "fontPoppins";
+	text-align: center;
+}
+
+.textRow div {
+	padding:0;
+	margin:0;
 }
 
 
@@ -331,6 +338,7 @@ body {
 	font-family : "fontPoppins";
 	font-size : 16px;
 	margin : 0;
+	margin-top:2%;
 }
 
 .footerRow1 {
@@ -361,4 +369,19 @@ body {
 
 .footerMenuSelected {
 	color : #FFFFFF;
+}
+
+.columnFooterInfo {
+	padding:0;
+}
+
+.columnFooterInfoText .footerText {
+	margin-left:10px;
+	font-family : "fontPoppins";
+}
+
+.footerText .fa {
+	margin-left:5px;
+	margin-right:5px;
+	font-size:18px;
 }
