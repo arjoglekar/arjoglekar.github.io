@@ -206,6 +206,11 @@ z-index: 1;
 .columnFooterInfo {
 	text-align : center;
 	padding: 2%;
+    font-size: 14px;
+}
+
+.footerText .fa {
+    font-size: 16px;
 }
 
 .columnFooterMenu {
@@ -213,6 +218,7 @@ z-index: 1;
     padding: 0;
 	margin-right: 2%;
 	text-align : center;
+    font-size: 14px;
 }
 
 .footerRow2 {
@@ -221,4 +227,8 @@ z-index: 1;
 
 .footerLogo {
 	width : 35%;
+}
+
+.footerBand {
+	font-size:11px;
 }
