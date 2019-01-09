@@ -210,19 +210,24 @@ body {
 }
 
 .titleContentBorder {
-	border-bottom:1px solid black;
+	border-bottom:1px solid #d8323d;
 	margin-top:15%;
-	margin-bottom:20%;
+	margin-bottom:0%;
 }
 
 .titleContentHeader {
 	margin-top: 4%;
+	font-family: "fontPlayfairDisplay";
+    color: #996a0e;
+    font-size: 22px;
 }
 
 .textRow {
 	margin-top:3%;
 	font-family : "fontPoppins";
 	text-align: center;
+	color:#996a0e;
+	font-size:14px;
 }
 
 .textRow div {
@@ -384,4 +389,54 @@ body {
 	margin-left:5px;
 	margin-right:5px;
 	font-size:18px;
+}
+
+.programHolder {
+	font-family : "fontPoppins";
+	text-align:center;
+}
+
+.programShortDescription{
+	margin-left: 5%;
+    margin-right: 5%;
+}
+
+.bannerAboutUs img {
+	width:100%;
+}
+
+.namePhotoHolder {
+	text-align:center;
+	margin-top:3%;
+}
+
+.namePhoto {
+	width:70%;
+}
+
+.backgroundHolderHomeOurFounder {
+	background: url(../images/background_seamless_pattern.png);
+	padding-bottom:4%;
+	margin-top:4%;
+}
+
+.backgroundHomeTadekamForYou {
+	background-color: #d8323d;
+}
+
+.homeTadekamForYouTitle {
+	color:#ffffff;
+	text-align:left;
+}
+
+.homeTadekamForYouBorder {
+	border:1px solid #ffffff;
+}
+
+.homeTadekamForYouStones {
+	padding:0;
+}
+
+.homeTadekamForYouStonesImage {
+	width:100%;
 }
