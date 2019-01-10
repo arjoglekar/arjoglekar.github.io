@@ -440,3 +440,17 @@ body {
 .homeTadekamForYouStonesImage {
 	width:100%;
 }
+
+.homeGurujiQuote {
+	padding: 0;
+	margin:0;
+}
+
+.homeGurujiQuote img {
+	width:100%;
+}
+
+.homeTadekamForYouTextRow {
+    text-align: left;
+    color: #ffffff;
+}
