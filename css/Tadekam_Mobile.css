@@ -252,3 +252,8 @@ z-index: 1;
 .homeTadekamForYouTextRow ul li {
     font-size: 15px;
 }
+
+.programHolder {
+    padding: 0;
+    margin-bottom: 15%;
+}
