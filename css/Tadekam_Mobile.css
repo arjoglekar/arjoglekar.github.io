@@ -232,3 +232,23 @@ z-index: 1;
 .footerBand {
 	font-size:11px;
 }
+
+.quoteImage {
+	display : none;
+}
+
+.quoteName ~ .row .titleContentBorder {
+	margin-bottom : 25%;
+}
+
+.namePhoto {
+    width: 100%;
+}
+
+.homeProgramsImageHolder {
+    padding: 0;
+}
+
+.homeTadekamForYouTextRow ul li {
+    font-size: 15px;
+}

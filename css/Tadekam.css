@@ -413,10 +413,6 @@ body {
 	margin-top:3%;
 }
 
-.namePhoto {
-	width:70%;
-}
-
 .backgroundHolderHomeOurFounder {
 	background: url(../images/background_seamless_pattern.png);
 	padding-bottom:4%;
@@ -476,7 +472,6 @@ body {
 .homeTadekamForYouTextRow ul li {
 	margin-top:5%;
 	margin-bottom:5%;
-	font-size:16px;
 }
 
 .backgroundJourneySoFarAboutTadekam {
@@ -498,6 +493,7 @@ body {
 
 .homeProgramsImageHolder {
 	margin-top:5%;
+	text-align: center;
 }
 
 .homeProgramsImageHolder img{

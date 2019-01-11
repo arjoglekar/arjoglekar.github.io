@@ -274,3 +274,15 @@
 .footerLogo {
 	width : 35%;
 }
+
+.namePhoto {
+	width:70%;
+}
+
+.offsetExtraSmall {
+	display : none;
+}
+
+.homeTadekamForYouTextRow ul li {
+    font-size: 16px;
+}
