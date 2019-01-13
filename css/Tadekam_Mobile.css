@@ -32,7 +32,6 @@
 }
 
 #menuNavbar {
-	/* width : 100%; */
 	height : 100%;
 	position: absolute;
 	top:0;
@@ -60,74 +59,20 @@
 }
 
 .menuOption {
-	/* display:table;
-	text-align:center; */
 	display : inline-block;
 	text-align : center;
 	height:auto;
 	width:100%;
-	/* padding : 0;
-	border-radius: 0 !important; */
 }
 
  .menuOptionText {
 	display:inline;
-	/* vertical-align:middle;
-	border : 0;
-	color : #996a0e;
-	cursor:pointer;
-	font-size:15px;
-	border-radius: 0 !important; */
 }
-
-/* .menuOptionText:hover { 
-	color : #996a0e;
-	text-decoration:none;
-}
-
-.menuOptionTextSelected {
-	color : #996a0e;
-}
-
-.menuOptionTextSelected div:after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 100% !important;
-	content: '';
-	color: transparent;
-	background: #996a0e;
-	height: 1px;
-}
-
-.menuOptionText div,
-.menuOptionText div:after,
-.menuOptionText div:before {
-	transition: all .75s;
-}*/
 
 .menuOptionText div {
 	width: 100%;
 }
 
-/* .menuOptionText div:after {
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-width: 0%;
-content: '';
-color: transparent;
-background: #996a0e;
-height: 1px;
-}
-.menuOptionText:hover div:after {
-width: 100%;
-color : #996a0e;
-} */
 
 .contentColumn {
 	width : 50%;
@@ -138,7 +83,6 @@ color : #996a0e;
 	left: 8%;
     top: 40%;
     text-align: center;
-	/* animation : none; */
 }
 
 .column2 {
@@ -177,23 +121,6 @@ color : #996a0e;
 	animation: flipBannerCard 18s infinite;
 }
 
-/* .flip-card-front, .flip-card-back { 
-position: absolute;
-width: 100%;
-height: 100%;
-backface-visibility: hidden;
-}
-
-.flip-card-front {
-z-index: 2;
-transform: rotateY(0deg);
-}
-
-.flip-card-back {
-transform: rotateY(180deg);
-z-index: 1;
-} */
-
 @keyframes flipBannerCard {
 	0% {transform: rotateY(0deg);}
 	10% {transform: rotateY(0deg);}
@@ -223,10 +150,6 @@ z-index: 1;
 
 .footerRow2 {
 	padding-left: 10%;
-}
-
-.footerLogo {
-	width : 35%;
 }
 
 .footerBand {

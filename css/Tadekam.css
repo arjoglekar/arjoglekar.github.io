@@ -239,31 +239,6 @@ body {
 	color:#d8323d;
 }
 
-
-
-/* .column1 {
-	left : 6%;
-	top : 42%;
-	text-align : right;
-} */
-
-/* .column2 {
-	left : 41%;
-	top : 32%;
-	text-align : center;
-	width : 20%;
-}
-
-.column3 {
-	left : 57%;
-	top : 42%;
-	text-align : left;
-} 
-
-.column2 img {
-	height: 70%;
- }*/
-
 @keyframes contentAppear {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
@@ -273,16 +248,7 @@ body {
 	right : 0;
 	position : absolute;
 	transition: right,rotateY .5s ease-in-out;
-	/* font-size : 120px; */
 }
-
-/*.contentLeftToRight {
-	animation: slideinSmallLeftToRight 4s ease-in;
-}
-
-.contentRightToLeft {
-	animation: slideinSmallRightToLeft 4s ease-in;
-}*/
 
 @keyframes slideinSmallLeftToRight {
 	0% {right: -100%;}
@@ -296,14 +262,12 @@ body {
 
 .flip-card {
 	background-color: transparent;
-	/* width: 50%; */
 	height: 100%;
 	perspective: 1000px;
 }
 
 .card-left {
 	position: relative;
-	/* left : 50%; */
 }
   
 .flip-card-inner {
@@ -345,12 +309,11 @@ body {
 	background-color : #fdf6bb;
 	color : #996a0e;
 	font-family : "fontPoppins";
-	font-size : 16px;
+	font-size : 13px;
 	margin : 0;
 }
 
 .footerRow1 {
-	border-bottom : 1px solid #996a0e;
 	padding-top : 2%;
 	padding-bottom : 2%;
 	margin-bottom : 2%;
@@ -362,7 +325,7 @@ body {
 }
 
 .footerBand {
-	background-color : #edd18c;
+	background-color : #fdf6bb;
 	color : #996a0e;
 	text-align: center;
 	font-family : "fontPoppins";
@@ -383,15 +346,22 @@ body {
 	padding:0;
 }
 
+.columnFooterInfoText {
+	padding:0;
+	font-size:13px;
+	text-align: center;
+	border-right:1px solid #996a0e;
+}
+
 .columnFooterInfoText .footerText {
-	margin-left:10px;
+	margin-left:4px;
 	font-family : "fontPoppins";
 }
 
 .footerText .fa {
 	margin-left:5px;
 	margin-right:5px;
-	font-size:18px;
+	font-size:16px;
 }
 
 .programHolder {
@@ -504,4 +474,8 @@ body {
 
 .homeProgramsImageHolder:hover img {
 	transform: scale(1.1);
+}
+
+.footerLogo {
+	text-align: center;
 }
