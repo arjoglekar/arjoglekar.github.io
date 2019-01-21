@@ -134,14 +134,12 @@ body {
 .banner {
 	overflow: hidden;
 	width:100%;
-	/*height:80%;*/
 	text-align:center;
 	position:relative;
 	margin:0;
 }
 
 .bannerContent {
-	/* width:100%; */
 	height:100%;
 	text-align:center;
 	overflow: hidden;
@@ -184,12 +182,9 @@ body {
 }
 
 .contentColumn {
-	/* width : 40%; */
 	position : absolute;
-	/* height : 50%; */
 	text-align : center;
 	opacity : 1;
-	/*animation: contentAppear 3s ease-in;*/
 	transition: all .5s ease-in-out;
 	margin : 0;
 	overflow : hidden;
@@ -350,7 +345,6 @@ body {
 	padding:0;
 	font-size:13px;
 	text-align: center;
-	border-right:1px solid #996a0e;
 }
 
 .columnFooterInfoText .footerText {

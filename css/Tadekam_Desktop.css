@@ -166,3 +166,7 @@
 .homeTadekamForYouTextRow ul li {
     font-size: 16px;
 }
+
+.columnFooterInfoText {
+    border-right: 1px solid #996a0e;
+}
