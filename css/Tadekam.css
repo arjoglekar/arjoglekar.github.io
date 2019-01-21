@@ -473,3 +473,32 @@ body {
 .footerLogo {
 	text-align: center;
 }
+
+.visibleRow {
+	height:auto;
+	max-height : 100%;
+	transition:max-height 0.5s ease-in-out;
+    padding-bottom: 3%;
+}
+
+.collapsedRow {
+	max-height: 0;
+	overflow: hidden;
+	transition:max-height 0.5s ease-in-out;
+    padding-bottom: 0%;
+}
+
+.hideCollapsibleArrow {
+	display : none;
+}
+
+.collapsibleArrowHolder {
+	text-align:center;
+	font-size:13px;
+	color:#d8323d;
+    font-family: "fontPoppins";
+}
+
+.collapsibleArrow {
+	cursor:pointer;
+}

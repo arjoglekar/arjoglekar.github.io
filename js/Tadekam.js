@@ -25,3 +25,8 @@ function hamburgerOpenClicked() {
 function hamburgerCloseClicked() {
     $('.hamburgerMenu').removeClass("hideHamburgerButton");
 }
+
+function toggleCollapsibleContent(id) {
+    $('#' + id + ' .visibleRow').toggleClass('collapsedRow');
+    $('#' + id + ' .collapsibleArrow').toggleClass('hideCollapsibleArrow');
+}

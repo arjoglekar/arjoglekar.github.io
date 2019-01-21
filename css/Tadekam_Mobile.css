@@ -184,3 +184,7 @@
 .columnFooterInfoText {
     margin-bottom: 10px;
 }
+
+.hideForMobile {
+	display : none;
+}
