@@ -27,6 +27,6 @@ function hamburgerCloseClicked() {
 }
 
 function toggleCollapsibleContent(id) {
-    $('#' + id + ' .visibleRow').toggleClass('collapsedRow');
+    // $('#' + id + ' .visibleRow').toggleClass('collapsedRow');
     $('#' + id + ' .collapsibleArrow').toggleClass('hideCollapsibleArrow');
 }

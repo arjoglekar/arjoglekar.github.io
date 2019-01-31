@@ -305,7 +305,7 @@ body {
 	color : #996a0e;
 	font-family : "fontPoppins";
 	font-size : 13px;
-	margin : 0;
+	margin : 2% 0 0 0;
 }
 
 .footerRow1 {
@@ -450,7 +450,6 @@ body {
 
 .backgroundHomePrograms {
 	background: url(../images/pink_flowers.png);
-	padding-bottom:4%;
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -474,18 +473,16 @@ body {
 	text-align: center;
 }
 
-.visibleRow {
-	height:auto;
-	max-height : 100%;
-	transition:max-height 0.5s ease-in-out;
-    padding-bottom: 3%;
+.collapsedRow.collapse {
+	margin-top: 3%;
 }
 
-.collapsedRow {
-	max-height: 0;
-	overflow: hidden;
-	transition:max-height 0.5s ease-in-out;
-    padding-bottom: 0%;
+.collapsedRow.collapsing {
+	margin-top: 0%;
+}
+
+.collapsedRow.collapse.in {
+	margin-top: 3%;
 }
 
 .hideCollapsibleArrow {
@@ -496,7 +493,8 @@ body {
 	text-align:center;
 	font-size:13px;
 	color:#d8323d;
-    font-family: "fontPoppins";
+	font-family: "fontPoppins";
+	margin-top:3%;
 }
 
 .collapsibleArrow {
