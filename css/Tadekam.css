@@ -483,6 +483,7 @@ body {
 
 .collapsedRow.collapse.in {
 	height: auto;
+	overflow-x: hidden;
 }
 
 .hideCollapsibleArrow {
