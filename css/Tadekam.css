@@ -501,3 +501,55 @@ body {
 .collapsibleArrow {
 	cursor:pointer;
 }
+
+.programsContainerRow {
+	margin-top: 10%;
+}
+
+.programsContainer {
+	padding:0;
+}
+
+.programsForChildren {
+	background-color:#d8323d;
+	color:#ffffff;
+	font-family: "fontPoppins";
+	text-align: center;
+}
+
+.programsForChildren .titleContentHeader {
+	color:#ffffff;
+}
+
+.programsForChildren .titleContentBorder {
+	border-bottom:1px solid #ffffff;
+}
+
+.programsForChildrenRow {
+	margin-top:2%;
+}
+
+.programsForChildrenRow .row {
+	margin-top:2%;
+	margin-bottom:3%;
+}
+
+.programsLiveSmartSeminars {
+	font-family:"fontPoppins";
+	text-align: center;
+	color: #996a0e;
+}
+
+.liveSmartSeminarHeader {
+	font-size:18px;
+}
+
+.liveSmartSeminarDescriptioin {
+	font-size:14px;
+}
+
+.programsByGurujiNaushir {
+	font-family:"fontPoppins";
+	text-align: center;
+	color: #996a0e;
+}
