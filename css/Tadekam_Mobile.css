@@ -188,3 +188,19 @@
 .hideForMobile {
 	display : none;
 }
+
+.programsLiveSmartSeminars .titleContentHeader {
+	margin-bottom: 3%;
+}
+
+.liveSmartSeminarColumn {
+	padding:0;
+}
+
+.liveSmartSeminarColumn {
+	margin-bottom:5%;
+}
+
+.programsByGurujiNaushir .titleContentHeader {
+	margin-bottom: 3%;
+}

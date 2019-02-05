@@ -111,6 +111,7 @@ body {
   background: #996a0e;
   height: 1px;
 }
+
 .menuOptionText:hover div:after {
   width: 100%;
   color : #996a0e;
@@ -177,6 +178,7 @@ body {
 	z-index:12;
 	overflow:hidden;
 }
+
 .contentText {
 	width : 100%;
 }
@@ -552,4 +554,8 @@ body {
 	font-family:"fontPoppins";
 	text-align: center;
 	color: #996a0e;
+}
+
+.programsByGurujiNaushirRow {
+	margin-bottom:2%;
 }
