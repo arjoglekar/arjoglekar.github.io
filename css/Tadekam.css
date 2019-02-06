@@ -513,10 +513,13 @@ body {
 }
 
 .programsForChildren {
-	background-color:#d8323d;
+	background:url('../images/background_programs_for_children.png');
+	background-repeat: no-repeat;
+  	background-size: 100%;
 	color:#ffffff;
 	font-family: "fontPoppins";
 	text-align: center;
+	margin-top:2%;
 }
 
 .programsForChildren .titleContentHeader {
@@ -529,6 +532,7 @@ body {
 
 .programsForChildrenRow {
 	margin-top:2%;
+    margin-bottom: 3%;
 }
 
 .programsForChildrenRow .row {
@@ -558,4 +562,37 @@ body {
 
 .programsByGurujiNaushirRow {
 	margin-bottom:2%;
+}
+
+.contactUsRow {
+	font-family : "fontPoppins";
+	text-align: center;
+	margin-top :1%;
+	margin-bottom:1%;
+}
+
+.contactUsForm {
+	border:1px solid #996a0e;
+	background: url(../images/background_seamless_pattern.png);
+}
+
+.contactUsForm .row {
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
+.contactUsForm .contactDetailsRow {
+	margin-top:7%;
+	margin-bottom:7%;
+}
+
+.contactUsForm .row input {
+	border:1px solid #996a0e;
+	width:100%;
+}
+
+.contactUsForm .row textarea {
+	border:1px solid #996a0e;
+	width: 100%;
+	resize: none; 
 }
