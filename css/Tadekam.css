@@ -307,7 +307,6 @@ body {
 	color : #996a0e;
 	font-family : "fontPoppins";
 	font-size : 13px;
-	margin : 2% 0 0 0;
 }
 
 .footerRow1 {
@@ -504,22 +503,32 @@ body {
 	cursor:pointer;
 }
 
-.programsContainerRow {
-	margin-top: 10%;
+.programsTitleHeader {
+	margin-top:3%;
+}
+
+.bannerPrograms img {
+	width:100%;
 }
 
 .programsContainer {
 	padding:0;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.spiritualProgramsContainer {
+	background: url('../images/background_seamless_pattern.png');
+	margin-top: 3%;
 }
 
 .programsForChildren {
 	background:url('../images/background_programs_for_children.png');
 	background-repeat: no-repeat;
-  	background-size: 100%;
+    background-size: cover;
 	color:#ffffff;
 	font-family: "fontPoppins";
 	text-align: center;
-	margin-top:2%;
 }
 
 .programsForChildren .titleContentHeader {
@@ -544,6 +553,14 @@ body {
 	font-family:"fontPoppins";
 	text-align: center;
 	color: #996a0e;
+	background:url('../images/pink_flowers.png');
+	background-size:100%; 
+	background-repeat: no-repeat; 
+}
+
+.liveSmartSeminarInnerColumn {
+	margin-top:1%;
+	margin-bottom:1%;
 }
 
 .liveSmartSeminarHeader {
@@ -558,10 +575,25 @@ body {
 	font-family:"fontPoppins";
 	text-align: center;
 	color: #996a0e;
+	background: url('../images/background_off_white.png');
+	padding-bottom: 1%
 }
 
 .programsByGurujiNaushirRow {
-	margin-bottom:2%;
+	margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.programsByGurujiNaushir .headerOfContentRow {
+	margin-bottom: 2%;
+}
+
+.programsByGurujiNaushir .headerOfContentRow .titleContentHeader {
+	margin-top: 3%;
+}
+
+.bannerContactUs img {
+	width:100%;
 }
 
 .contactUsRow {
