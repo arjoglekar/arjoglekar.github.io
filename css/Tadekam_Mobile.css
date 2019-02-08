@@ -204,3 +204,7 @@
 .programsByGurujiNaushir .titleContentHeader {
 	margin-bottom: 3%;
 }
+
+.applyZeroPadding {
+	padding:0;
+}
