@@ -638,3 +638,17 @@ body {
 	width: 100%;
 	resize: none; 
 }
+
+.galleryImage {
+	text-align: center;
+	margin-top:3%;
+}
+
+.galleryImage img {
+	width:90%;
+}
+
+.galleryImageDescription {
+	font-family: "fontPoppins";
+	text-align: center;
+}

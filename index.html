@@ -23,32 +23,32 @@
 				</div>
 				<div class="col-xs-7 col-md-7 col-lg-7 flatMenu">
 					<div class="col-xs-1 col-md-2 col-lg-2 menuOption">
-						<a class="menuOptionText menuOptionTextSelected" id="HomeMenu" onclick="menuSelected(event,this.id)">
+						<a class="menuOptionText menuOptionTextSelected" id="HomeMenu" onclick="menuSelected(event,this.id,true)">
 							<div>Home</div>
 						</a>
 					</div>
 					<div class="col-xs-1 col-md-2 col-lg-2 menuOption">
-						<a class="menuOptionText" id="AboutTadekamMenu" onclick="menuSelected(event,this.id)">
+						<a class="menuOptionText" id="AboutTadekamMenu" onclick="menuSelected(event,this.id,true)">
 							<div>About Us</div>
 						</a>
 					</div>
 					<div class="col-xs-1 col-md-2 col-lg-2 menuOption">
-						<a class="menuOptionText" id="GalleryMenu" onclick="menuSelected(event,this.id)">
+						<a class="menuOptionText" id="GalleryMenu" onclick="menuSelected(event,this.id,true)">
 							<div>Gallery</div>
 						</a>
 					</div>
 					<div class="col-xs-1 col-md-2 col-lg-2 menuOption">
-						<a class="menuOptionText" id="MediaMenu" onclick="menuSelected(event,this.id)">
+						<a class="menuOptionText" id="MediaMenu" onclick="menuSelected(event,this.id,true)">
 							<div>Media</div>
 						</a>
 					</div>
 					<div class="col-xs-1 col-md-2 col-lg-2 menuOption">
-						<a class="menuOptionText" id="ProgramsMenu" onclick="menuSelected(event,this.id)">
+						<a class="menuOptionText" id="ProgramsMenu" onclick="menuSelected(event,this.id,true)">
 							<div>Programs</div>
 						</a>
 					</div>
 					<div class="col-xs-1 col-md-2 col-lg-2 menuOption">
-						<a class="menuOptionText" id="ContactUsMenu" onclick="menuSelected(event,this.id)">
+						<a class="menuOptionText" id="ContactUsMenu" onclick="menuSelected(event,this.id,true)">
 							<div>Contact Us</div>
 						</a>
 					</div>
@@ -65,42 +65,42 @@
 					<ul class="navbar-nav hamburgerMenuList">
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText menuOptionTextSelected" id="HomeMenu" onclick="menuSelected(event,this.id)">
+								<a class="menuOptionText menuOptionTextSelected" id="HomeMenu" onclick="menuSelected(event,this.id,true)">
 									<div>Home</div>
 								</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText" id="AboutTadekamMenu" onclick="menuSelected(event,this.id)">
+								<a class="menuOptionText" id="AboutTadekamMenu" onclick="menuSelected(event,this.id,true)">
 									<div>About Us</div>
 								</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText" id="GalleryMenu" onclick="menuSelected(event,this.id)">
+								<a class="menuOptionText" id="GalleryMenu" onclick="menuSelected(event,this.id,true)">
 									<div>Gallery</div>
 								</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText" id="MediaMenu" onclick="menuSelected(event,this.id)">
+								<a class="menuOptionText" id="MediaMenu" onclick="menuSelected(event,this.id,true)">
 									<div>Media</div>
 								</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText" id="ProgramsMenu" onclick="menuSelected(event,this.id)">
+								<a class="menuOptionText" id="ProgramsMenu" onclick="menuSelected(event,this.id,true)">
 									<div>Programs</div>
 								</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText" id="ContactUsMenu" onclick="menuSelected(event,this.id)">
+								<a class="menuOptionText" id="ContactUsMenu" onclick="menuSelected(event,this.id,true)">
 									<div>Contact Us</div>
 								</a>
 							</div>
@@ -232,7 +232,7 @@
 						<div class="row textRow">
 							<div class="col-xs-2 col-lg-2"></div>
 							<div class="col-xs-8 col-lg-8">
-								<a href="#OurFounderAboutTadekam" id="AboutTadekamMenuFooter" onclick="menuSelected(event,this.id)">Read More</a>
+								<a href="#OurFounderAboutTadekam" id="AboutTadekamMenuFooter" onclick="menuSelected(event,this.id,false)">Read More</a>
 							</div>
 							<div class="col-xs-2 col-lg-2"></div>
 						</div>
@@ -351,7 +351,7 @@
 						<div class="row textRow">
 							<div class="col-xs-2 col-lg-2"></div>
 							<div class="col-xs-8 col-lg-8">
-								<a href="#mainContentProgramsMenu" id="ProgramsMenuFooter" onclick="menuSelected(event,this.id)">Explore</a>
+								<a href="#mainContentProgramsMenu" id="ProgramsMenuFooter" onclick="menuSelected(event,this.id,false)">Explore</a>
 							</div>
 							<div class="col-xs-2 col-lg-2"></div>
 						</div>
@@ -483,7 +483,7 @@
 						<div class="col-xs-2 col-lg-2 collapsibleArrow" onclick="toggleCollapsibleContent('JourneySoFar')" data-toggle="collapse" data-target="#JourneySoFarCollapsibleRow">
 							<span class="glyphicon glyphicon-chevron-down"></span>
 							<div class="row">
-								<div class="col-xs-12 col-lg-12">
+								<div class="col-xs-12 col-lg-12 collapsibleArrowText">
 									Read More
 								</div>
 							</div>
@@ -491,7 +491,7 @@
 						<div class="col-xs-2 col-lg-2 collapsibleArrow hideCollapsibleArrow" onclick="toggleCollapsibleContent('JourneySoFar')" data-toggle="collapse" data-target="#JourneySoFarCollapsibleRow">
 							<span class="glyphicon glyphicon-chevron-up"></span>
 							<div class="row">
-								<div class="col-xs-12 col-lg-12">
+								<div class="col-xs-12 col-lg-12 collapsibleArrowText">
 									Read Less
 								</div>
 							</div>
@@ -902,6 +902,87 @@
 					</div>
 				</div>
 			</div>
+			<div class="row mainContent" id="mainContentGalleryMenu">
+				<div class="row">
+					<div class="col-xs-12 col-16-12 bannerGallery">
+						<img src="images/banner_gallery.png" alt="Banner Programs">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-1 col-lg-1"></div>
+					<div class="col-xs-10 col-lg-10">
+						<div class="row">
+							<div class="col-xs-2 col-lg-3 galleryImage">
+								<div class="row">
+									<img src="images/galleryimage_01.jpg" alt="">
+								</div>
+								<div class="row galleryImageDescription">
+									Guruji Naushir & Govindagiri Swami
+								</div>
+							</div>
+							<div class="col-xs-2 col-lg-3 galleryImage">
+								<div class="row">
+									<img src="images/galleryimage_02.jpg" alt="">
+								</div>
+								<div class="row galleryImageDescription">
+									Guruji Naushir & Govindagiri Swami
+								</div>
+							</div>
+							<div class="col-xs-2 col-lg-3 galleryImage">
+								<div class="row">
+									<img src="images/galleryimage_03.jpg" alt="">
+								</div>
+								<div class="row galleryImageDescription">
+									Guruji Naushir & Govindagiri Swami
+								</div>
+							</div>
+							<div class="col-xs-2 col-lg-3 galleryImage">
+								<div class="row">
+									<img src="images/galleryimage_04.jpg" alt="">
+								</div>
+								<div class="row galleryImageDescription">
+									Guruji Naushir & Govindagiri Swami
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2 col-lg-3 galleryImage">
+								<div class="row">
+									<img src="images/galleryimage_05.jpg" alt="">
+								</div>
+								<div class="row galleryImageDescription">
+									Guruji Naushir & Govindagiri Swami
+								</div>
+							</div>
+							<div class="col-xs-2 col-lg-3 galleryImage">
+								<div class="row">
+									<img src="images/galleryimage_06.jpg" alt="">
+								</div>
+								<div class="row galleryImageDescription">
+									Guruji Naushir & Govindagiri Swami
+								</div>
+							</div>
+							<div class="col-xs-2 col-lg-3 galleryImage">
+								<div class="row">
+									<img src="images/galleryimage_07.jpg" alt="">
+								</div>
+								<div class="row galleryImageDescription">
+									Guruji Naushir & Govindagiri Swami
+								</div>
+							</div>
+							<div class="col-xs-2 col-lg-3 galleryImage">
+								<div class="row">
+									<img src="images/galleryimage_08.jpg" alt="">
+								</div>
+								<div class="row galleryImageDescription">
+									Guruji Naushir & Govindagiri Swami
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-1 col-lg-1"></div>
+				</div>
+			</div>
 			<div class="row mainContent" id="mainContentContactUsMenu">
 				<div class="row">
 					<div class="col-xs-12 col-16-12 bannerContactUs">
@@ -1017,13 +1098,13 @@
 						</div>
 					</div>
 					<div class="row footerRow2">
-						<div class="col-xs-12 col-lg-1 columnFooterMenu footerMenuSelected" id="HomeMenuFooter" onclick="menuSelected(event,this.id)">Home</div>
-						<div class="col-xs-12 col-lg-2 columnFooterMenu" id="AboutTadekamMenuFooter" onclick="menuSelected(event,this.id)">About Tadekam</div>
-						<div class="col-xs-12 col-lg-1 columnFooterMenu" id="ProgramsMenuFooter" onclick="menuSelected(event,this.id)">Programs</div>
-						<div class="col-xs-12 col-lg-1 columnFooterMenu" id="MediaMenuFooter" onclick="menuSelected(event,this.id)">Media</div>
-						<div class="col-xs-12 col-lg-1 columnFooterMenu" id="GalleryMenuFooter" onclick="menuSelected(event,this.id)">Gallery</div>
-						<div class="col-xs-12 col-lg-1 columnFooterMenu" id="ContactUsMenuFooter" onclick="menuSelected(event,this.id)">Connect</div>
-						<div class="col-xs-12 col-lg-1 columnFooterMenu" id="HomeMenuFooter" onclick="menuSelected(event,this.id)">Books</div>
+						<div class="col-xs-12 col-lg-1 columnFooterMenu footerMenuSelected" id="HomeMenuFooter" onclick="menuSelected(event,this.id,true)">Home</div>
+						<div class="col-xs-12 col-lg-2 columnFooterMenu" id="AboutTadekamMenuFooter" onclick="menuSelected(event,this.id,true)">About Tadekam</div>
+						<div class="col-xs-12 col-lg-1 columnFooterMenu" id="ProgramsMenuFooter" onclick="menuSelected(event,this.id,true)">Programs</div>
+						<div class="col-xs-12 col-lg-1 columnFooterMenu" id="MediaMenuFooter" onclick="menuSelected(event,this.id,true)">Media</div>
+						<div class="col-xs-12 col-lg-1 columnFooterMenu" id="GalleryMenuFooter" onclick="menuSelected(event,this.id,true)">Gallery</div>
+						<div class="col-xs-12 col-lg-1 columnFooterMenu" id="ContactUsMenuFooter" onclick="menuSelected(event,this.id,true)">Connect</div>
+						<div class="col-xs-12 col-lg-1 columnFooterMenu" id="MediaMenuFooter" onclick="menuSelected(event,this.id,true)">Books</div>
 					</div>
 				</div>
 				<div class="col-lg-2 offsetExtraSmall"></div>
