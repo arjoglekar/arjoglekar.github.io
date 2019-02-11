@@ -1,4 +1,4 @@
-function menuSelected(event,menuID) {
+function menuSelected(event,menuID,isScrollToTop) {
     event.stopPropagation();
     var menuSelectorClass="menuOptionTextSelected";
     var footerMenuSelectorClass="footerMenuSelected";
@@ -9,12 +9,15 @@ function menuSelected(event,menuID) {
     $('.' + footerMenuSelectorClass).removeClass(footerMenuSelectorClass);
     $('#' + selectedMenu).addClass(menuSelectorClass);
     $('#' + selectedMenu + suffixHamburger).addClass(menuSelectorClass);
-    $('#' + selectedMenu + suffixFooter).addClass(footerMenuSelectorClass);
+    $('#' + selectedMenu + suffixFooter + '.columnFooterMenu').addClass(footerMenuSelectorClass);
     var mainContentSelectorClass="mainContentSelected";
     $('.' + mainContentSelectorClass).removeClass(mainContentSelectorClass);
     $('#mainContent' + selectedMenu).addClass(mainContentSelectorClass);
     if(!menuID.includes(suffixFooter)) {
         $('#buttonHamburgerClose').click();
+    }
+    if(isScrollToTop) {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
     }
 }
 

@@ -503,6 +503,11 @@ body {
 
 .collapsibleArrow {
 	cursor:pointer;
+	padding:0;
+}
+
+.collapsibleArrowText {
+	padding:0;
 }
 
 .programsTitleHeader {
@@ -563,10 +568,13 @@ body {
 .liveSmartSeminarInnerColumn {
 	margin-top:1%;
 	margin-bottom:1%;
+    padding: 0;
 }
 
 .liveSmartSeminarHeader {
 	font-size:18px;
+    font-weight: bold;
+    margin-top: 2%;
 }
 
 .liveSmartSeminarDescriptioin {
