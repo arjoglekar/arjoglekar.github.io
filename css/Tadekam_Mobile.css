@@ -208,3 +208,7 @@
 .applyZeroPadding {
 	padding:0;
 }
+
+.galleryImage img {
+    width: 100%;
+}

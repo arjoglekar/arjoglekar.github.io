@@ -651,4 +651,5 @@ body {
 .galleryImageDescription {
 	font-family: "fontPoppins";
 	text-align: center;
+    padding: 5px;
 }
