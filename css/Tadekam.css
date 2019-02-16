@@ -642,6 +642,7 @@ body {
 .galleryImage {
 	text-align: center;
 	margin-top:3%;
+    padding: 0;
 }
 
 .galleryImage img {
@@ -652,4 +653,8 @@ body {
 	font-family: "fontPoppins";
 	text-align: center;
     padding: 5px;
+}
+
+.galleryChildrensRow {
+	margin-bottom:3%;
 }
