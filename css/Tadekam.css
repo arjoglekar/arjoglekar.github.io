@@ -658,3 +658,24 @@ body {
 .galleryChildrensRow {
 	margin-bottom:3%;
 }
+
+.mediaContainer {
+	font-family: "fontPoppins";
+}
+
+.mediaContainer .nav-pills>li {
+	background-color: transparent;
+}
+
+.mediaContainer .nav-pills>li.active>a,
+.mediaContainer .nav-pills>li.active>a:hover,
+.mediaContainer .nav-pills>li>a:hover {
+	color:#d8323d;
+	background-color: transparent;
+}
+
+.mediaContainer iframe {
+	width:100%;
+	margin-top:2%;
+	margin-bottom:2%;
+}
