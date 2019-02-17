@@ -213,9 +213,18 @@
     width: 100%;
 }
 
-.mediaContainer .nav-pills>li>a,
-.mediaContainer .nav-pills>li>a:hover {
+#mainContentMediaMenu .nav-pills>li>a,
+#mainContentMediaMenu .nav-pills>li>a:hover {
 	padding:0;
+}
+
+#mainContentMediaMenu ul {
+	margin-top:20%;
+}
+
+#mainContentMediaMenu .nav-pills>li {
+	background-color: transparent;
+	float: left;
 }
 
 .videoHolder {

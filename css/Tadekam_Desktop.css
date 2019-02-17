@@ -171,6 +171,10 @@
     border-right: 1px solid #996a0e;
 }
 
-.mediaContainer .nav-pills>li>a {
+#mainContentMediaMenu .nav-pills>li>a {
 	padding:4px;
+}
+
+#mainContentMediaMenu ul {
+	margin-top:5%;
 }
