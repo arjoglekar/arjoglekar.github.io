@@ -670,8 +670,13 @@ body {
 .mediaContainer .nav-pills>li.active>a,
 .mediaContainer .nav-pills>li.active>a:hover,
 .mediaContainer .nav-pills>li>a:hover {
-	color:#d8323d;
 	background-color: transparent;
+}
+
+.mediaContainer .nav-pills>li.active>a[data-toggle="pill"],
+.mediaContainer .nav-pills>li.active>a[data-toggle="pill"]:hover,
+.mediaContainer .nav-pills>li>a[data-toggle="pill"]:hover {
+	color:#d8323d;
 }
 
 .mediaContainer iframe {

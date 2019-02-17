@@ -212,3 +212,8 @@
 .galleryImage img {
     width: 100%;
 }
+
+.mediaContainer .nav-pills>li>a,
+.mediaContainer .nav-pills>li>a:hover {
+	padding:0;
+}
