@@ -13,6 +13,7 @@
 .hamburgerMenu {
 	padding : 0;
 	height: 100%;
+    padding-right: 2%;
 }
 
 .hamburgerButton {
@@ -27,6 +28,11 @@
 	color : #996a0e;
 }
 
+.hamburgerButton img {
+	height:30%;
+    margin-top: 20%;
+}
+
 .hideHamburgerButton {
 	opacity : 0;
 }
@@ -38,7 +44,7 @@
 	margin:0;
 	padding:0;
 	background-color : #000000 !important;
-	opacity:0.8;
+	opacity:0.93;
 	z-index:100;
 	transition:all 0.6s ease-in;
 	border:0px;
@@ -56,6 +62,12 @@
 	padding : 0;
 	list-style: none;
 	margin:0;
+    min-height: 100%;
+    padding-top: 30%;
+}
+
+.hamburgerMenuList li.nav-item {
+	height: 12%;
 }
 
 .menuOption {
@@ -67,12 +79,19 @@
 
  .menuOptionText {
 	display:inline;
+	font-size:18px;
+	color:#ffffff;
+	font-family:"fontPoppinsLight";
 }
 
 .menuOptionText div {
 	width: 100%;
 }
 
+.menuOptionTextSelected {
+	color:#996a0e !important;
+	text-decoration: none !important;
+}
 
 .contentColumn {
 	width : 50%;

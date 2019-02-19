@@ -16,7 +16,7 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row header">
-				<div class="col-xs-3 col-md-3 col-lg-3 logoHolder">
+				<div class="col-xs-3 col-md-3 col-lg-3 logoHolder" onclick="menuSelected(event,'HomeMenuFooter',true)">
 					<img class="logo" src='images/logo.png'/>
 				</div>
 				<div class="col-xs-2 col-md-2 col-lg-2">
@@ -56,51 +56,53 @@
 				<div class="col-xs-9 hamburgerMenu">
 					<button class="button navbar-toggler hamburgerButton" onclick="hamburgerOpenClicked()" type="button" data-toggle="collapse" data-target="#menuNavbar">
 						<span class="glyphicon glyphicon-menu-hamburger"></span>
+						<!-- <img src="images/menu.svg" alt=""> -->
 					</button>
 				</div>
 				<div class="col-xs-12 navbar-collapse collapse" id="menuNavbar" style="height:0px;">
 					<button id="buttonHamburgerClose" class="button navbar-toggler hamburgerButton" onclick="hamburgerCloseClicked()" type="button" data-toggle="collapse" data-target="#menuNavbar">
 						<span class="glyphicon glyphicon-remove-sign"></span>
+						<!-- <img src="images/close.svg" alt=""> -->
 					</button>
 					<ul class="navbar-nav hamburgerMenuList">
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText menuOptionTextSelected" id="HomeMenu" onclick="menuSelected(event,this.id,true)">
+								<a class="menuOptionText menuOptionTextSelected" id="HomeMenuHamburger" onclick="menuSelected(event,this.id,true)">
 									<div>Home</div>
 								</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText" id="AboutTadekamMenu" onclick="menuSelected(event,this.id,true)">
+								<a class="menuOptionText" id="AboutTadekamMenuHamburger" onclick="menuSelected(event,this.id,true)">
 									<div>About Us</div>
 								</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText" id="GalleryMenu" onclick="menuSelected(event,this.id,true)">
+								<a class="menuOptionText" id="GalleryMenuHamburger" onclick="menuSelected(event,this.id,true)">
 									<div>Gallery</div>
 								</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText" id="MediaMenu" onclick="menuSelected(event,this.id,true)">
+								<a class="menuOptionText" id="MediaMenuHamburger" onclick="menuSelected(event,this.id,true)">
 									<div>Media</div>
 								</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText" id="ProgramsMenu" onclick="menuSelected(event,this.id,true)">
+								<a class="menuOptionText" id="ProgramsMenuHamburger" onclick="menuSelected(event,this.id,true)">
 									<div>Programs</div>
 								</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<div class="menuOption">
-								<a class="menuOptionText" id="ContactUsMenu" onclick="menuSelected(event,this.id,true)">
+								<a class="menuOptionText" id="ContactUsMenuHamburger" onclick="menuSelected(event,this.id,true)">
 									<div>Contact Us</div>
 								</a>
 							</div>
@@ -361,7 +363,8 @@
 			<div class="row mainContent" id="mainContentAboutTadekamMenu">
 				<div class="row">
 					<div class="col-xs-12 col-16-12 bannerAboutUs">
-						<img src="images/banner_about_us.png" alt="Banner About Us">
+						<img src="images/banner_about_us.png" alt="Banner About Us" class="hideForMobile">
+						<img src="images/banner_about_us_mobile.png" alt="Banner About Us" class="hideForDesktop">
 					</div>
 				</div>
 				<div class="row headerOfContentRow" id="OurFounderAboutTadekam">
@@ -544,7 +547,8 @@
 			<div class="row mainContent" id="mainContentProgramsMenu">
 				<div class="row">
 					<div class="col-xs-12 col-16-12 bannerPrograms">
-						<img src="images/banner_programs.png" alt="Banner Programs">
+						<img src="images/banner_programs.png" alt="Banner Programs" class="hideForMobile">
+						<img src="images/banner_programs_mobile.png" alt="Banner Programs" class="hideForDesktop">
 					</div>
 				</div>
 				<div class="row headerOfContentRow">
@@ -907,7 +911,8 @@
 			<div class="row mainContent" id="mainContentGalleryMenu">
 				<div class="row">
 					<div class="col-xs-12 col-16-12 bannerGallery">
-						<img src="images/banner_gallery.png" alt="Banner Programs">
+						<img src="images/banner_gallery.png" alt="Banner Programs" class="hideForMobile">
+						<img src="images/banner_gallery_mobile.png" alt="Banner Programs" class="hideForDesktop">
 					</div>
 				</div>
 				<div class="row">
@@ -925,7 +930,7 @@
 								<div class="row">
 									<div class="col-xs-2 hideForDesktop"></div>
 									<div class="col-xs-8 col-lg-12">
-										<img src="images/galleryimage_01.jpg" alt="">
+										<img src="images/galleryimage_01.png" alt="">
 									</div>
 									<div class="col-xs-2 hideForDesktop"></div>
 								</div>
@@ -937,7 +942,19 @@
 									<div class="row">
 										<div class="col-xs-2 hideForDesktop"></div>
 										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_02.jpg" alt="">
+											<img src="images/galleryimage_02.png" alt="">
+										</div>
+										<div class="col-xs-2 hideForDesktop"></div>
+									</div>
+								<div class="row galleryImageDescription">
+									Guruji Naushir & Govindagiri Swami
+								</div>
+							</div>
+							<div class="col-xs-12 col-lg-3 galleryImage">
+									<div class="row">
+										<div class="col-xs-2 hideForDesktop"></div>
+										<div class="col-xs-8 col-lg-12">
+											<img src="images/galleryimage_03.png" alt="">
 										</div>
 										<div class="col-xs-2 hideForDesktop"></div>
 									</div>
@@ -949,24 +966,12 @@
 									<div class="row">
 										<div class="col-xs-2 hideForDesktop"></div>
 										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_03.jpg" alt="">
+											<img src="images/galleryimage_04.png" alt="">
 										</div>
 										<div class="col-xs-2 hideForDesktop"></div>
 									</div>
 								<div class="row galleryImageDescription">
 									Guruji Naushir Performing Pada Puja
-								</div>
-							</div>
-							<div class="col-xs-12 col-lg-3 galleryImage">
-									<div class="row">
-										<div class="col-xs-2 hideForDesktop"></div>
-										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_04.jpg" alt="">
-										</div>
-										<div class="col-xs-2 hideForDesktop"></div>
-									</div>
-								<div class="row galleryImageDescription">
-									Guruji Naushir & Govindagiri Swami
 								</div>
 							</div>
 						</div>
@@ -975,7 +980,7 @@
 										<div class="row">
 											<div class="col-xs-2 hideForDesktop"></div>
 											<div class="col-xs-8 col-lg-12">
-												<img src="images/galleryimage_05.jpg" alt="">
+												<img src="images/galleryimage_05.png" alt="">
 											</div>
 											<div class="col-xs-2 hideForDesktop"></div>
 										</div>
@@ -987,7 +992,7 @@
 									<div class="row">
 										<div class="col-xs-2 hideForDesktop"></div>
 										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_06.jpg" alt="">
+											<img src="images/galleryimage_06.png" alt="">
 										</div>
 										<div class="col-xs-2 hideForDesktop"></div>
 									</div>
@@ -999,7 +1004,7 @@
 									<div class="row">
 										<div class="col-xs-2 hideForDesktop"></div>
 										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_07.jpg" alt="">
+											<img src="images/galleryimage_07.png" alt="">
 										</div>
 										<div class="col-xs-2 hideForDesktop"></div>
 									</div>
@@ -1011,7 +1016,7 @@
 									<div class="row">
 										<div class="col-xs-2 hideForDesktop"></div>
 										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_08.jpg" alt="">
+											<img src="images/galleryimage_08.png" alt="">
 										</div>
 										<div class="col-xs-2 hideForDesktop"></div>
 									</div>
@@ -1025,7 +1030,7 @@
 										<div class="row">
 											<div class="col-xs-2 hideForDesktop"></div>
 											<div class="col-xs-8 col-lg-12">
-												<img src="images/galleryimage_09.jpg" alt="">
+												<img src="images/galleryimage_09.png" alt="">
 											</div>
 											<div class="col-xs-2 hideForDesktop"></div>
 										</div>
@@ -1037,7 +1042,7 @@
 									<div class="row">
 										<div class="col-xs-2 hideForDesktop"></div>
 										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_10.jpg" alt="">
+											<img src="images/galleryimage_10.png" alt="">
 										</div>
 										<div class="col-xs-2 hideForDesktop"></div>
 									</div>
@@ -1049,7 +1054,7 @@
 									<div class="row">
 										<div class="col-xs-2 hideForDesktop"></div>
 										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_11.jpg" alt="">
+											<img src="images/galleryimage_11.png" alt="">
 										</div>
 										<div class="col-xs-2 hideForDesktop"></div>
 									</div>
@@ -1061,7 +1066,7 @@
 									<div class="row">
 										<div class="col-xs-2 hideForDesktop"></div>
 										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_12.jpg" alt="">
+											<img src="images/galleryimage_12.png" alt="">
 										</div>
 										<div class="col-xs-2 hideForDesktop"></div>
 									</div>
@@ -1075,7 +1080,7 @@
 										<div class="row">
 											<div class="col-xs-2 hideForDesktop"></div>
 											<div class="col-xs-8 col-lg-12">
-												<img src="images/galleryimage_13.jpg" alt="">
+												<img src="images/galleryimage_13.png" alt="">
 											</div>
 											<div class="col-xs-2 hideForDesktop"></div>
 										</div>
@@ -1087,7 +1092,7 @@
 									<div class="row">
 										<div class="col-xs-2 hideForDesktop"></div>
 										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_14.jpg" alt="">
+											<img src="images/galleryimage_14.png" alt="">
 										</div>
 										<div class="col-xs-2 hideForDesktop"></div>
 									</div>
@@ -1099,7 +1104,7 @@
 									<div class="row">
 										<div class="col-xs-2 hideForDesktop"></div>
 										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_15.jpg" alt="">
+											<img src="images/galleryimage_15.png" alt="">
 										</div>
 										<div class="col-xs-2 hideForDesktop"></div>
 									</div>
@@ -1111,7 +1116,7 @@
 									<div class="row">
 										<div class="col-xs-2 hideForDesktop"></div>
 										<div class="col-xs-8 col-lg-12">
-											<img src="images/galleryimage_16.jpg" alt="">
+											<img src="images/galleryimage_16.png" alt="">
 										</div>
 										<div class="col-xs-2 hideForDesktop"></div>
 									</div>
@@ -1138,7 +1143,7 @@
 								<div class="row">
 									<div class="col-xs-2 hideForDesktop"></div>
 									<div class="col-xs-8 col-lg-12">
-										<img src="images/galleryimage_children_01.jpg" alt="">
+										<img src="images/galleryimage_children_01.png" alt="">
 									</div>
 									<div class="col-xs-2 hideForDesktop"></div>
 								</div>
@@ -1147,7 +1152,7 @@
 								<div class="row">
 									<div class="col-xs-2 hideForDesktop"></div>
 									<div class="col-xs-8 col-lg-12">
-										<img src="images/galleryimage_children_02.jpg" alt="">
+										<img src="images/galleryimage_children_02.png" alt="">
 									</div>
 									<div class="col-xs-2 hideForDesktop"></div>
 								</div>
@@ -1156,7 +1161,7 @@
 								<div class="row">
 									<div class="col-xs-2 hideForDesktop"></div>
 									<div class="col-xs-8 col-lg-12">
-										<img src="images/galleryimage_children_03.jpg" alt="">
+										<img src="images/galleryimage_children_03.png" alt="">
 									</div>
 									<div class="col-xs-2 hideForDesktop"></div>
 								</div>
@@ -1165,7 +1170,7 @@
 								<div class="row">
 									<div class="col-xs-2 hideForDesktop"></div>
 									<div class="col-xs-8 col-lg-12">
-										<img src="images/galleryimage_children_04.jpg" alt="">
+										<img src="images/galleryimage_children_04.png" alt="">
 									</div>
 									<div class="col-xs-2 hideForDesktop"></div>
 								</div>
@@ -1177,7 +1182,8 @@
 			<div class="row mainContent" id="mainContentContactUsMenu">
 				<div class="row">
 					<div class="col-xs-12 col-16-12 bannerContactUs">
-						<img src="images/banner_contact_us.png" alt="Banner Programs">
+						<img src="images/banner_contact_us.png" alt="Banner Programs" class="hideForMobile">
+						<img src="images/banner_contact_us_mobile.png" alt="Banner Programs" class="hideForDesktop">
 					</div>
 				</div>
 				<div class="row headerOfContentRow">
@@ -1262,7 +1268,8 @@
 			<div class="row mainContent" id="mainContentMediaMenu">
 				<div class="row">
 					<div class="col-xs-12 col-16-12 bannerContactUs">
-						<img src="images/banner_media.png" alt="Banner Programs">
+						<img src="images/banner_media.png" alt="Banner Programs" class="hideForMobile">
+						<img src="images/banner_media_mobile.png" alt="Banner Programs" class="hideForDesktop">
 					</div>
 				</div>
 				<div class="row headerOfContentRow">

@@ -13,6 +13,10 @@
 	src: url("../fonts/Poppins-Regular.otf");
 }
   
+@font-face {
+	font-family: "fontPoppinsLight";
+	src: url("../fonts/Poppins-Light.otf");
+}
 
 body {
 	font-family: "fontAladdin";
@@ -32,6 +36,7 @@ body {
 .logoHolder {
 	height : 100%;
 	text-align:center;
+	cursor:pointer;
 }
 
 .logo {
@@ -65,56 +70,10 @@ body {
 	border-radius: 0 !important;
 }
 
-.menuOptionText:hover {
-	color : #996a0e;
-	text-decoration:none;
-}
-
-.menuOptionTextSelected {
-	color : #996a0e;
-}
-
-.menuOptionTextSelected div:after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 100% !important;
-	content: '';
-	color: transparent;
-	background: #996a0e;
-	height: 1px;
-}
-
-.menuOptionText div,
-.menuOptionText div:after,
-.menuOptionText div:before {
-	transition: all .75s;
-}
-
 .menuOptionText div {
   position: relative;
   height: 35px;
   width: 80%;
-}
-
-.menuOptionText div:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '';
-  color: transparent;
-  background: #996a0e;
-  height: 1px;
-}
-
-.menuOptionText:hover div:after {
-  width: 100%;
-  color : #996a0e;
 }
 
 .mainContent {

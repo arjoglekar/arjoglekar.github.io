@@ -70,6 +70,7 @@
   background: #996a0e;
   height: 1px;
 }
+  
 .menuOptionText:hover div:after {
   width: 100%;
   color : #996a0e;
