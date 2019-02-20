@@ -167,12 +167,8 @@
     font-size: 14px;
 }
 
-.footerRow2 {
-	padding-left: 10%;
-}
-
 .footerBand {
-	font-size:11px;
+	font-size:9px;
 }
 
 .quoteImage {
@@ -198,6 +194,20 @@
 .programHolder {
     padding: 0;
     margin-bottom: 15%;
+}
+
+.programTitle {
+	margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.programsForChildren {
+	background:none;
+	background-color:#d8323d;
+}
+
+.liveSmartSeminarHeader {
+	font-size:17px;
 }
 
 .columnFooterInfoText {
