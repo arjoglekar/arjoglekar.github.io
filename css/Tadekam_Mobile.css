@@ -79,7 +79,7 @@
 	width:100%;
 }
 
- .menuOptionText {
+.menuOptionText {
 	display:inline;
 	font-size:18px;
 	color:#ffffff;
@@ -138,7 +138,7 @@
 	left : 0%;
 }
 
- .flip-card-inner {
+.flip-card-inner {
 	animation: flipBannerCard 18s infinite;
 }
 
@@ -162,9 +162,7 @@
 }
 
 .columnFooterMenu {
-	margin-left: 2%;
-    padding: 0;
-	margin-right: 2%;
+	padding: 0;
 	text-align : center;
     font-size: 14px;
 }
@@ -177,12 +175,54 @@
 	display : none;
 }
 
+.textRow {
+	margin-top: 6%;
+}
+
+.titleContentHeader {
+	margin-top:8%;
+}
+
+.titleContentBorder {
+	margin-top:25%;
+}
+
 .quoteName ~ .row .titleContentBorder {
 	margin-bottom : 25%;
 }
 
+.homeTadekamForYouBorder {
+	margin-top:10%;
+}
+
+.backgroundJourneySoFarAboutTadekam {
+	padding-bottom:5%;
+	margin-top:5%;
+}
+
+.teamTadekamBackground {
+	padding-bottom:5%;
+}
+
+.homeGurujiQuote {
+    padding-bottom: 5%;
+}
+
+.backgroundHolderHomeOurFounder {
+	padding-bottom: 5%;
+}
+
+.backgroundHomeTadekamForYou {
+    padding-bottom: 5%;
+}
+
+.backgroundHomePrograms {
+	padding-bottom: 5%;
+}
+
 .namePhoto {
-    width: 100%;
+	width: 100%;
+	margin-top:15%;
 }
 
 .homeProgramsImageHolder {
