@@ -22,6 +22,8 @@
 	border: 0px;
 	font-size: 20px;
 	transition:all 0.2s ease-in-out;
+    padding-right: 5%;
+    padding-top: 3%;
 }
 
 .hamburgerButton > span {
@@ -29,8 +31,8 @@
 }
 
 .hamburgerButton img {
-	height:30%;
-    margin-top: 20%;
+	height:30px;
+	width:30px;
 }
 
 .hideHamburgerButton {
