@@ -639,6 +639,10 @@ body {
 	margin-bottom:3%;
 }
 
+.mediaBooks {
+	width:80%;
+}
+
 #mainContentMediaMenu .nav-pills>li {
 	background-color: transparent;
 }
