@@ -333,18 +333,26 @@
 						<div class="row">
 							<div class="col-xs-2 col-lg-2"></div>
 							<div class="col-xs-4 col-lg-2 homeProgramsImageHolder">
-								<img src="images/home_spiritual_programs.png" alt="Spiritual">
+								<a href="#SpiritualPrograms" id="ProgramsMenuFooter" onclick="menuSelected(event,this.id,false)">
+									<img src="images/home_spiritual_programs.png" alt="Spiritual">
+								</a>
 							</div>
 							<div class="col-xs-4 col-lg-2 homeProgramsImageHolder">
-								<img src="images/home_programs_for_children.png" alt="Children">
+								<a href="#ChildrenPrograms" id="ProgramsMenuFooter" onclick="menuSelected(event,this.id,false)">
+									<img src="images/home_programs_for_children.png" alt="Children">
+								</a>
 							</div>
 							<div class="col-xs-12 hideForDesktop"></div>
 							<div class="col-xs-2 hideForDesktop"></div>
 							<div class="col-xs-4 col-lg-2 homeProgramsImageHolder">
+								<a href="#LiveSmartSeminarPrograms" id="ProgramsMenuFooter" onclick="menuSelected(event,this.id,false)">
 								<img src="images/home_live_smart_seminars.png" alt="Seminars">
+								</a>
 							</div>
 							<div class="col-xs-4 col-lg-2 homeProgramsImageHolder">
-								<img src="images/home_programs_by_guruji_naushir.png" alt="Guruji">
+								<a href="#GurujiPrograms" id="ProgramsMenuFooter" onclick="menuSelected(event,this.id,false)">
+									<img src="images/home_programs_by_guruji_naushir.png" alt="Guruji">
+								</a>
 							</div>
 							<div class="col-xs-2 col-lg-2"></div>
 						</div>
@@ -639,7 +647,7 @@
 				</div>
 				<div class="row spiritualProgramsContainer">
 					<div class="col-xs-12 col-lg-12">
-						<div class="row headerOfContentRow">
+						<div class="row headerOfContentRow" id="SpiritualPrograms">
 							<div class="col-xs-2 col-lg-2"></div>
 							<div class="col-xs-8 col-lg-8 titleContentHeader">
 								Spiritual Programs
@@ -751,7 +759,7 @@
 				</div>
 				<div class="row programsForChildren">
 					<div class="col-xs-12 col-lg-12">
-						<div class="row headerOfContentRow">
+						<div class="row headerOfContentRow" id="ChildrenPrograms">
 							<div class="col-xs-2 col-lg-2"></div>
 							<div class="col-xs-8 col-lg-8 titleContentHeader">
 								Programs for Children
@@ -812,7 +820,7 @@
 					</div>
 				</div>
 				<div class="row programsLiveSmartSeminars">
-					<div class="row headerOfContentRow">
+					<div class="row headerOfContentRow" id="LiveSmartSeminarPrograms">
 						<div class="col-xs-2 col-lg-2"></div>
 						<div class="col-xs-8 col-lg-8 titleContentHeader">
 							Live Smart Seminars
@@ -928,7 +936,7 @@
 					</div>
 				</div>
 				<div class="row programsByGurujiNaushir">
-					<div class="row headerOfContentRow">
+					<div class="row headerOfContentRow" id="GurujiPrograms">
 						<div class="col-xs-2 col-lg-2"></div>
 						<div class="col-xs-8 col-lg-8 titleContentHeader">
 							Programs By Guruji Naushir
