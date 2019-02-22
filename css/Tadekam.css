@@ -262,12 +262,16 @@ body {
 }
 
 .footer {
-	background-color : #fdf6bb;
-	color : #996a0e;
+	background-color :#996a0e ;
+	color : #fdf6bb;
 	font-family : "fontPoppins";
 	font-size : 13px;
 	margin:0;
 	max-width: 100%;
+}
+
+.footer > div {
+	padding : 0;
 }
 
 .footerRow1 {
@@ -282,8 +286,8 @@ body {
 }
 
 .footerBand {
-	background-color : #fdf6bb;
-	color : #996a0e;
+	background-color :#996a0e ;
+	color : #fdf6bb;
 	text-align: center;
 	font-family : "fontPoppins";
 	font-size : 12px;
