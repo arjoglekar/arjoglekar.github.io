@@ -1,704 +1,704 @@
 @font-face {
-	font-family: "fontPlayfairDisplay";
-	src: url("../fonts/PlayfairDisplay-Regular.otf");
-  }
-  
-  @font-face {
-	  font-family: "fontAladdin";
-	  src: url("../fonts/Aladdin.ttf");
-  }
-  
-  @font-face {
-	  font-family: "fontPoppins";
-	  src: url("../fonts/Poppins-Regular.otf");
-  }
-	
-  @font-face {
-	  font-family: "fontPoppinsLight";
-	  src: url("../fonts/Poppins-Light.otf");
-  }
-  
-  body {
-	  font-family: "fontAladdin";
-	  overflow-x: hidden;
-  }
-  
-  .container-fluid {
-	  padding : 0;
-  }
-  
-  .header {
-	  height : 18%;
-	  margin : 0;
-	  font-family: "fontPoppins";
-  }
-  
-  .logoHolder {
-	  height : 100%;
-	  text-align:center;
-	  cursor:pointer;
-  }
-  
-  .logo {
-	  height : 95%;
-	  padding-top : 2.5%;
-  }
-  
-  .flatMenu {
-	  display : inline-block;
-  }
-  
-  .hamburgerMenu {
-	  display : inline-block;
-  }
-  
-  .menuOption {
-	  display:table;
-	  text-align:center;
-	  height:100%;
-	  padding : 0;
-	  border-radius: 0 !important;
-  }
-  
-  .menuOptionText {
-	  display:table-cell;
-	  vertical-align:middle;
-	  border : 0;
-	  color : #996a0e;
-	  cursor:pointer;
-	  font-size:15px;
-	  border-radius: 0 !important;
-  }
-  
-  .menuOptionText div {
-	position: relative;
-	height: 35px;
-	width: 80%;
-  }
-  
-  .mainContent {
-	  position:relative;
-	  width:100%;
-	  top:15%;
-	  padding : 0;
-	  margin:0;
-	  display:none;
-	  overflow-x:hidden;
-	  transition: all 1s ease-in-out;
-  }
-  
-  .mainContentSelected {
-	  display:block;
-  }
-  
-  .banner {
-	  overflow: hidden;
-	  width:100%;
-	  text-align:center;
-	  position:relative;
-	  margin:0;
-  }
-  
-  .bannerContent {
-	  height:100%;
-	  text-align:center;
-	  overflow: hidden;
-  }
-  
-  .background {
-	  background: url("../images/banner-background.jpg");
-	  background-size: cover;
-	  background-attachment: fixed;
-	  background-repeat: no-repeat;
-	  animation: zoomin 15s ease-in infinite;
-	  transition: all .5s ease-in-out;
-	  z-index:10;
-	  height : 100%;
-  }
-  
-  .foreground {
-	  background: none;
-	  z-index:11;
-  }
-  
-  @keyframes zoomin {
-	  0% {transform: scale(1);}
-	  50% {transform: scale(1.2);}
-	  100% {transform: scale(1);}
-  }
-  
-  .contentHolder {
-	  width:100%;
-	  height:100%;
-	  position: absolute;
-	  top:0;
-	  left:0;
-	  overflow : hidden;
-	  z-index:12;
-	  overflow:hidden;
-  }
-  
-  .contentText {
-	  width : 100%;
-  }
-  
-  .contentColumn {
-	  position : absolute;
-	  text-align : center;
-	  opacity : 1;
-	  transition: all .5s ease-in-out;
-	  margin : 0;
-	  overflow : hidden;
-	  color : #FFFFFF;
-  }
-  
-  .headerOfContentRow {
-	  padding:0;
-	  margin:0;
-	  font-family: "fontPoppins";
-	  text-align:center;
-  }
-  
-  .headerOfContentRow div {
-	  padding: 0;
-	  margin-right:0;
-	  margin-left:0;
-  }
-  
-  .titleContentBorder {
-	  border-bottom:1px solid #d8323d;
-	  margin-top:5%;
-	  margin-bottom:0%;
-  }
-  
-  .titleContentHeader {
-	  margin-top: 4%;
-	  font-family: "fontPlayfairDisplay";
-	  color: #996a0e;
-	  font-size: 22px;
-  }
-  
-  .textRow {
-	  margin-top:3%;
-	  font-family : "fontPoppins";
-	  text-align: center;
-	  color:#996a0e;
-	  font-size:14px;
-  }
-  
-  .textRow div {
-	  padding:0;
-	  margin:0;
-  }
-  
-  .textRow a {
-	  color:#d8323d;
-  }
-  
-  @keyframes contentAppear {
-	  0% {opacity: 0;}
-	  100% {opacity: 1;}
-  }
-  
-  .contentSmaller {
-	  right : 0;
-	  position : absolute;
-	  transition: right,rotateY .5s ease-in-out;
-  }
-  
-  @keyframes slideinSmallLeftToRight {
-	  0% {right: -100%;}
-	  100% {right: 0;}
-  }
-  
-  @keyframes slideinSmallRightToLeft {
-	  0% {right: 100%;}
-	  100% {right: 0;}
-  }
-  
-  .flip-card {
-	  background-color: transparent;
-	  height: 100%;
-	  perspective: 1000px;
-  }
-  
-  .card-left {
-	  position: relative;
-  }
-	
-  .flip-card-inner {
-	position: relative;
-	transition: transform 1s;
-	transform-style: preserve-3d;
-	width: 100%;
-	height: 100%;
-	animation: flipBannerCard 24s infinite;
-  }
-  
-  .flip-card-front, .flip-card-back {
+font-family: "fontPlayfairDisplay";
+src: url("../fonts/PlayfairDisplay-Regular.otf");
+}
+
+@font-face {
+	font-family: "fontAladdin";
+	src: url("../fonts/Aladdin.ttf");
+}
+
+@font-face {
+	font-family: "fontPoppins";
+	src: url("../fonts/Poppins-Regular.otf");
+}
+
+@font-face {
+	font-family: "fontPoppinsLight";
+	src: url("../fonts/Poppins-Light.otf");
+}
+
+body {
+	font-family: "fontAladdin";
+	overflow-x: hidden;
+}
+
+.container-fluid {
+	padding : 0;
+}
+
+.header {
+	height : 18%;
+	margin : 0;
+	font-family: "fontPoppins";
+}
+
+.logoHolder {
+	height : 100%;
+	text-align:center;
+	cursor:pointer;
+}
+
+.logo {
+	height : 95%;
+	padding-top : 2.5%;
+}
+
+.flatMenu {
+	display : inline-block;
+}
+
+.hamburgerMenu {
+	display : inline-block;
+}
+
+.menuOption {
+	display:table;
+	text-align:center;
+	height:100%;
+	padding : 0;
+	border-radius: 0 !important;
+}
+
+.menuOptionText {
+	display:table-cell;
+	vertical-align:middle;
+	border : 0;
+	color : #996a0e;
+	cursor:pointer;
+	font-size:15px;
+	border-radius: 0 !important;
+}
+
+.menuOptionText div {
+position: relative;
+height: 35px;
+width: 80%;
+}
+
+.mainContent {
+	position:relative;
+	width:100%;
+	top:15%;
+	padding : 0;
+	margin:0;
+	display:none;
+	overflow-x:hidden;
+	transition: all 1s ease-in-out;
+}
+
+.mainContentSelected {
+	display:block;
+}
+
+.banner {
+	overflow: hidden;
+	width:100%;
+	text-align:center;
+	position:relative;
+	margin:0;
+}
+
+.bannerContent {
+	height:100%;
+	text-align:center;
+	overflow: hidden;
+}
+
+.background {
+	background: url("../images/banner-background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	animation: zoomin 15s ease-in infinite;
+	transition: all .5s ease-in-out;
+	z-index:10;
+	height : 100%;
+}
+
+.foreground {
+	background: none;
+	z-index:11;
+}
+
+@keyframes zoomin {
+	0% {transform: scale(1);}
+	50% {transform: scale(1.2);}
+	100% {transform: scale(1);}
+}
+
+.contentHolder {
+	width:100%;
+	height:100%;
 	position: absolute;
-	width: 100%;
+	top:0;
+	left:0;
+	overflow : hidden;
+	z-index:12;
+	overflow:hidden;
+}
+
+.contentText {
+	width : 100%;
+}
+
+.contentColumn {
+	position : absolute;
+	text-align : center;
+	opacity : 1;
+	transition: all .5s ease-in-out;
+	margin : 0;
+	overflow : hidden;
+	color : #FFFFFF;
+}
+
+.headerOfContentRow {
+	padding:0;
+	margin:0;
+	font-family: "fontPoppins";
+	text-align:center;
+}
+
+.headerOfContentRow div {
+	padding: 0;
+	margin-right:0;
+	margin-left:0;
+}
+
+.titleContentBorder {
+	border-bottom:1px solid #d8323d;
+	margin-top:5%;
+	margin-bottom:0%;
+}
+
+.titleContentHeader {
+	margin-top: 4%;
+	font-family: "fontPlayfairDisplay";
+	color: #996a0e;
+	font-size: 22px;
+}
+
+.textRow {
+	margin-top:3%;
+	font-family : "fontPoppins";
+	text-align: center;
+	color:#996a0e;
+	font-size:14px;
+}
+
+.textRow div {
+	padding:0;
+	margin:0;
+}
+
+.textRow a {
+	color:#d8323d;
+}
+
+@keyframes contentAppear {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.contentSmaller {
+	right : 0;
+	position : absolute;
+	transition: right,rotateY .5s ease-in-out;
+}
+
+@keyframes slideinSmallLeftToRight {
+	0% {right: -100%;}
+	100% {right: 0;}
+}
+
+@keyframes slideinSmallRightToLeft {
+	0% {right: 100%;}
+	100% {right: 0;}
+}
+
+.flip-card {
+	background-color: transparent;
 	height: 100%;
-	backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-	z-index: 2;
-	transform: rotateY(0deg);
-  }
-  
-  .flip-card-back {
-	transform: rotateY(180deg);
-	z-index: 1;
-  }
-  
-  @keyframes flipBannerCard {
-	  0% {transform: rotateY(0deg);}
-	  25% {transform: rotateY(0deg);}
-	  50% {transform: rotateY(180deg);}
-	  68% {transform: rotateY(0deg);}
-	  85% {transform: rotateY(180deg);}
-	  100% {transform: rotateY(0deg);}
-  }
-  
-  .footer {
-	  background-color :#996a0e ;
-	  color : #ffffff;
-	  font-family : "fontPoppins";
-	  font-size : 13px;
-	  margin:0;
-	  max-width: 100%;
-  }
-  
-  .footer > div {
-	  padding : 0;
-  }
-  
-  .footerRow1 {
-	  padding-top : 2%;
-	  padding-bottom : 2%;
-	  margin-bottom : 2%;
-  }
-  
-  .footerRow2 {
-	  padding-top : 2%;
-	  padding-bottom : 2%;
-  }
-  
-  .footerBand {
-	  background-color :#996a0e ;
-	  color : #ffffff;
-	  text-align: center;
-	  font-family : "fontPoppins";
-	  font-size : 13px;
-	  line-height:50px;
-	  margin : 0;
-  }
-  
-  .columnFooterMenu {
-	  cursor : pointer;
-  }
-  
-  .footerMenuSelected {
-	  color : red;
-  }
-  
-  .columnFooterInfo {
-	  padding:0;
-  }
-  
-  .columnFooterInfoText {
-	  padding:0;
-	  font-size:13px;
-	  text-align: center;
-  }
-  
-  .columnFooterInfoText .footerText {
-	  font-family : "fontPoppins";
-  }
-  
-  .footerText img {
-	  padding-left:5px;
-	  padding-right:5px;
-	  vertical-align: top;
-  }
-  
-  .programHolder {
-	  font-family : "fontPoppins";
-	  text-align:center;
-  }
-  
-  .programShortDescription{
-	  margin-left: 5%;
-	  margin-right: 5%;
-  }
-  
-  .bannerAboutUs img {
-	  width:100%;
-  }
-  
-  .teamTadekamBackground {
-	  margin-bottom:1%;
-  }
-  
-  .namePhotoHolder {
-	  text-align:center;
-	  margin-top:3%;
-  }
-  
-  .backgroundHolderHomeOurFounder {
-	  background: url(../images/background_seamless_pattern.png);
-	  padding-bottom:4%;
-	  margin-top:4%;
-  }
-  
-  .backgroundHomeTadekamForYou {
-	  background-color: #d8323d;
-  }
-  
-  .homeTadekamForYouTitle {
-	  color:#ffffff;
-	  text-align:left;
-  }
-  
-  .homeTadekamForYouBorder {
-	  border:1px solid #ffffff;
-  }
-  
-  .homeTadekamForYouStones {
-	  padding:0;
-  }
-  
-  .homeTadekamForYouStonesImage {
-	  width:100%;
-  }
-  
-  .homeGurujiQuote {
-	  padding: 0;
-	  margin:0;
-  }
-  
-  .homeGurujiQuote .textRow{
-	  font-size:26px;
-	  font-family: "fontPlayfairDisplay";
-	  margin-top:0;
-  }
-  
-  .homeGurujiQuote .titleContentHeader {
-	  font-size:20px;
-  }
-  
-  .homeGurujiQuote img {
-	  width:100%;
-  }
-  
-  .homeTadekamForYouTextRow {
-	  text-align: left;
-	  color: #ffffff;
-  }
-  
-  .homeTadekamForYouTextRow ul {
-	  margin:0;
-	  padding-left:25px;
-  }
-  
-  .homeTadekamForYouTextRow ul li {
-	  margin-top:5%;
-	  margin-bottom:5%;
-  }
-  
-  .backgroundJourneySoFarAboutTadekam {
-	  background: url(../images/background_seamless_pattern.png);
-	  padding-bottom:4%;
-	  margin-top:4%;
-  }
-  
-  .quoteName {
-	  margin-top:5%;
-  }
-  
-  .backgroundHomePrograms {
-	  background: url(../images/pink_flowers.png);
-	  background-size: 100%;
-	  background-repeat: no-repeat;
-	  margin-bottom: 1%;
-  }
-  
-  .homeProgramsImageHolder {
-	  margin-top:5%;
-	  text-align: center;
-  }
-  
-  .homeProgramsImageHolder img{
-	  transition: .3s ease-in-out;
-	  cursor: pointer;
-	  width:90%;
-  }
-  
-  .homeProgramsImageHolder:hover img {
-	  transform: scale(1.1);
-  }
-  
-  .footerLogo {
-	  text-align: center;
-  }
-  
-  .collapsedRow {
-	  margin-top: 0%;
-  }
-  
-  .collapsedRow.collapsing {
-	  margin-top: 0%;
-  }
-  
-  .collapsedRow.collapse.in {
-	  height: auto;
-	  overflow-x: hidden;
-  }
-  
-  .hideCollapsibleArrow {
-	  display : none;
-  }
-  
-  .collapsibleArrowHolder {
-	  text-align:center;
-	  font-size:13px;
-	  color:#d8323d;
-	  font-family: "fontPoppins";
-	  margin-top:2%;
-  }
-  
-  .collapsibleArrow {
-	  cursor:pointer;
-	  padding:0;
-  }
-  
-  .collapsibleArrowText {
-	  padding:0;
-  }
-  
-  .programsTitleHeader {
-	  margin-top:3%;
-  }
-  
-  .bannerPrograms img {
-	  width:100%;
-  }
-  
-  .programsContainer {
-	  padding:0;
-	  padding-top: 2%;
-	  padding-bottom: 2%;
-  }
-  
-  .programTitle {
-	  font-weight: bold;
-	  font-size: 18px;
-	  margin-bottom: 1%;
-	  margin-top: 1%;
-  }
-  
-  .spiritualProgramsContainer {
-	  background: url('../images/background_seamless_pattern.png');
-	  margin-top: 3%;
-  }
-  
-  .programsForChildren {
-	  background:url('../images/background_programs_for_children.png');
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  color:#ffffff;
-	  font-family: "fontPoppins";
-	  text-align: center;
-  }
-  
-  .programsForChildren .titleContentHeader {
-	  color:#ffffff;
-  }
-  
-  .programsForChildren .titleContentBorder {
-	  border-bottom:1px solid #ffffff;
-  }
-  
-  .programsForChildrenRow {
-	  margin-top:2%;
-	  margin-bottom: 3%;
-  }
-  
-  .programsForChildrenRow .row {
-	  margin-top:2%;
-	  margin-bottom:3%;
-  }
-  
-  .programsLiveSmartSeminars {
-	  font-family:"fontPoppins";
-	  text-align: center;
-	  color: #996a0e;
-	  background:url('../images/pink_flowers.png');
-	  background-size:100%; 
-	  background-repeat: no-repeat; 
-  }
-  
-  .liveSmartSeminarInnerColumn {
-	  margin-top:1%;
-	  margin-bottom:1%;
-	  padding: 0;
-  }
-  
-  .liveSmartSeminarHeader {
-	  font-size:18px;
-	  font-weight: bold;
-	  margin-top: 2%;
-  }
-  
-  .liveSmartSeminarDescriptioin {
-	  font-size:14px;
-  }
-  
-  .programsByGurujiNaushir {
-	  font-family:"fontPoppins";
-	  text-align: center;
-	  color: #996a0e;
-	  background: url('../images/background_off_white.png');
-	  padding-bottom: 1%
-  }
-  
-  .programsByGurujiNaushirRow {
-	  margin-bottom: 1%;
-	  margin-top: 1%;
-  }
-  
-  .programsByGurujiNaushir .headerOfContentRow {
-	  margin-bottom: 2%;
-  }
-  
-  .programsByGurujiNaushir .headerOfContentRow .titleContentHeader {
-	  margin-top: 3%;
-  }
-  
-  .bannerContactUs img {
-	  width:100%;
-  }
-  
-  .contactUsRow {
-	  font-family : "fontPoppins";
-	  text-align: center;
-	  margin-top :1%;
-	  margin-bottom:1%;
-  }
-  
-  .contactUsForm {
-	  border:1px solid #996a0e;
-	  background: url(../images/background_seamless_pattern.png);
-  }
-  
-  .contactUsForm .row {
-	  margin-top:1%;
-	  margin-bottom:1%;
-  }
-  
-  .contactUsForm .contactDetailsRow {
-	  margin-top:7%;
-	  margin-bottom:7%;
-  }
-  
-  .contactUsForm .row input {
-	  border:1px solid #996a0e;
-	  width:100%;
-  }
-  
-  .contactUsForm .row textarea {
-	  border:1px solid #996a0e;
-	  width: 100%;
-	  resize: none; 
-  }
-  
-  .galleryImage {
-	  text-align: center;
-	  margin-top:3%;
-	  padding: 0;
-  }
-  
-  .galleryImage img {
-	  width:90%;
-  }
-  
-  .galleryImageDescription {
-	  font-family: "fontPoppins";
-	  text-align: center;
-	  padding: 5px;
-  }
-  
-  .galleryChildrensRow {
-	  margin-bottom:3%;
-  }
-  
-  #mainContentMediaMenu {
-	  font-family: "fontPoppins";
-  }
-  
-  .mediaContainer {
-	  margin-top:3%;
-	  margin-bottom:3%;
-  }
-  
-  .mediaBooks {
-	  width:80%;
-  }
-  
-  #mainContentMediaMenu .nav-pills>li {
-	  background-color: transparent;
-  }
-  
-  #mainContentMediaMenu .nav-pills>li.active>a,
-  #mainContentMediaMenu .nav-pills>li.active>a:hover,
-  #mainContentMediaMenu .nav-pills>li>a:hover {
-	  background-color: transparent;
-  }
-  
-  #mainContentMediaMenu .nav-pills>li.active>a[data-toggle="pill"],
-  #mainContentMediaMenuiaMenu .nav-pills>li.active>a[data-toggle="pill"]:hover,
-  #mainContentMediaMenu .nav-pills>li>a[data-toggle="pill"]:hover {
-	  color:#d8323d;
-  }
-  
-  .mediaContainer iframe {
-	  width:100%;
-	  margin-top:2%;
-	  margin-bottom:2%;
-  }
-  
-  .bookImageContainer {
-	  background-image: url('../images/background_seamless_pattern.png');
-	  color:#996a0e;
-	  font-size:16px;
-	  text-align: center;
-	  padding-left:0;
-	  padding-right:0;
-	  padding-top:2%;
-	  padding-bottom:2%;
-  }
-  
-  .bookDescription {
-	  text-align: center;
-	  color:#996a0e;
-	  font-size:14px;
-	  margin-top:2%;
-	  padding-bottom:2%;
-  }
-  
-  .bookDescription .btn-primary,
-  .bookDescription .btn-primary>a {
-	  color:#ffffff;
-	  background-color:#d8323d;
-	  border:0px;
-	  margin-top:1%;
-  }
-  
-  .bookDescription .btn-primary:hover,
-  .bookDescription .btn-primary>a:hover {
-	  color:#ffffff;
-	  background-color:#d8323d;
-	  border:0px;
-	  text-decoration: none;
-  }
+	perspective: 1000px;
+}
+
+.card-left {
+	position: relative;
+}
+
+.flip-card-inner {
+position: relative;
+transition: transform 1s;
+transform-style: preserve-3d;
+width: 100%;
+height: 100%;
+animation: flipBannerCard 24s infinite;
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+.flip-card-front {
+z-index: 2;
+transform: rotateY(0deg);
+}
+
+.flip-card-back {
+transform: rotateY(180deg);
+z-index: 1;
+}
+
+@keyframes flipBannerCard {
+	0% {transform: rotateY(0deg);}
+	25% {transform: rotateY(0deg);}
+	50% {transform: rotateY(180deg);}
+	68% {transform: rotateY(0deg);}
+	85% {transform: rotateY(180deg);}
+	100% {transform: rotateY(0deg);}
+}
+
+.footer {
+	background-color :#996a0e ;
+	color : #ffffff;
+	font-family : "fontPoppins";
+	font-size : 13px;
+	margin:0;
+	max-width: 100%;
+}
+
+.footer > div {
+	padding : 0;
+}
+
+.footerRow1 {
+	padding-top : 2%;
+	padding-bottom : 2%;
+	margin-bottom : 2%;
+}
+
+.footerRow2 {
+	padding-top : 2%;
+	padding-bottom : 2%;
+}
+
+.footerBand {
+	background-color :#996a0e ;
+	color : #ffffff;
+	text-align: center;
+	font-family : "fontPoppins";
+	font-size : 13px;
+	line-height:50px;
+	margin : 0;
+}
+
+.columnFooterMenu {
+	cursor : pointer;
+}
+
+.footerMenuSelected {
+	color : red;
+}
+
+.columnFooterInfo {
+	padding:0;
+}
+
+.columnFooterInfoText {
+	padding:0;
+	font-size:13px;
+	text-align: center;
+}
+
+.columnFooterInfoText .footerText {
+	font-family : "fontPoppins";
+}
+
+.footerText img {
+	padding-left:5px;
+	padding-right:5px;
+	vertical-align: top;
+}
+
+.programHolder {
+	font-family : "fontPoppins";
+	text-align:center;
+}
+
+.programShortDescription{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.bannerAboutUs img {
+	width:100%;
+}
+
+.teamTadekamBackground {
+	margin-bottom:1%;
+}
+
+.namePhotoHolder {
+	text-align:center;
+	margin-top:3%;
+}
+
+.backgroundHolderHomeOurFounder {
+	background: url(../images/background_seamless_pattern.png);
+	padding-bottom:4%;
+	margin-top:4%;
+}
+
+.backgroundHomeTadekamForYou {
+	background-color: #d8323d;
+}
+
+.homeTadekamForYouTitle {
+	color:#ffffff;
+	text-align:left;
+}
+
+.homeTadekamForYouBorder {
+	border:1px solid #ffffff;
+}
+
+.homeTadekamForYouStones {
+	padding:0;
+}
+
+.homeTadekamForYouStonesImage {
+	width:100%;
+}
+
+.homeGurujiQuote {
+	padding: 0;
+	margin:0;
+}
+
+.homeGurujiQuote .textRow{
+	font-size:26px;
+	font-family: "fontPlayfairDisplay";
+	margin-top:0;
+}
+
+.homeGurujiQuote .titleContentHeader {
+	font-size:20px;
+}
+
+.homeGurujiQuote img {
+	width:100%;
+}
+
+.homeTadekamForYouTextRow {
+	text-align: left;
+	color: #ffffff;
+}
+
+.homeTadekamForYouTextRow ul {
+	margin:0;
+	padding-left:25px;
+}
+
+.homeTadekamForYouTextRow ul li {
+	margin-top:5%;
+	margin-bottom:5%;
+}
+
+.backgroundJourneySoFarAboutTadekam {
+	background: url(../images/background_seamless_pattern.png);
+	padding-bottom:4%;
+	margin-top:4%;
+}
+
+.quoteName {
+	margin-top:5%;
+}
+
+.backgroundHomePrograms {
+	background: url(../images/pink_flowers.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-bottom: 1%;
+}
+
+.homeProgramsImageHolder {
+	margin-top:5%;
+	text-align: center;
+}
+
+.homeProgramsImageHolder img{
+	transition: .3s ease-in-out;
+	cursor: pointer;
+	width:90%;
+}
+
+.homeProgramsImageHolder:hover img {
+	transform: scale(1.1);
+}
+
+.footerLogo {
+	text-align: center;
+}
+
+.collapsedRow {
+	margin-top: 0%;
+}
+
+.collapsedRow.collapsing {
+	margin-top: 0%;
+}
+
+.collapsedRow.collapse.in {
+	height: auto;
+	overflow-x: hidden;
+}
+
+.hideCollapsibleArrow {
+	display : none;
+}
+
+.collapsibleArrowHolder {
+	text-align:center;
+	font-size:13px;
+	color:#d8323d;
+	font-family: "fontPoppins";
+	margin-top:2%;
+}
+
+.collapsibleArrow {
+	cursor:pointer;
+	padding:0;
+}
+
+.collapsibleArrowText {
+	padding:0;
+}
+
+.programsTitleHeader {
+	margin-top:3%;
+}
+
+.bannerPrograms img {
+	width:100%;
+}
+
+.programsContainer {
+	padding:0;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.programTitle {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+
+.spiritualProgramsContainer {
+	background: url('../images/background_seamless_pattern.png');
+	margin-top: 3%;
+}
+
+.programsForChildren {
+	background:url('../images/background_programs_for_children.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:#ffffff;
+	font-family: "fontPoppins";
+	text-align: center;
+}
+
+.programsForChildren .titleContentHeader {
+	color:#ffffff;
+}
+
+.programsForChildren .titleContentBorder {
+	border-bottom:1px solid #ffffff;
+}
+
+.programsForChildrenRow {
+	margin-top:2%;
+	margin-bottom: 3%;
+}
+
+.programsForChildrenRow .row {
+	margin-top:2%;
+	margin-bottom:3%;
+}
+
+.programsLiveSmartSeminars {
+	font-family:"fontPoppins";
+	text-align: center;
+	color: #996a0e;
+	background:url('../images/pink_flowers.png');
+	background-size:100%; 
+	background-repeat: no-repeat; 
+}
+
+.liveSmartSeminarInnerColumn {
+	margin-top:1%;
+	margin-bottom:1%;
+	padding: 0;
+}
+
+.liveSmartSeminarHeader {
+	font-size:18px;
+	font-weight: bold;
+	margin-top: 2%;
+}
+
+.liveSmartSeminarDescriptioin {
+	font-size:14px;
+}
+
+.programsByGurujiNaushir {
+	font-family:"fontPoppins";
+	text-align: center;
+	color: #996a0e;
+	background: url('../images/background_off_white.png');
+	padding-bottom: 1%
+}
+
+.programsByGurujiNaushirRow {
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+
+.programsByGurujiNaushir .headerOfContentRow {
+	margin-bottom: 2%;
+}
+
+.programsByGurujiNaushir .headerOfContentRow .titleContentHeader {
+	margin-top: 3%;
+}
+
+.bannerContactUs img {
+	width:100%;
+}
+
+.contactUsRow {
+	font-family : "fontPoppins";
+	text-align: center;
+	margin-top :1%;
+	margin-bottom:1%;
+}
+
+.contactUsForm {
+	border:1px solid #996a0e;
+	background: url(../images/background_seamless_pattern.png);
+}
+
+.contactUsForm .row {
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
+.contactUsForm .contactDetailsRow {
+	margin-top:7%;
+	margin-bottom:7%;
+}
+
+.contactUsForm .row input {
+	border:1px solid #996a0e;
+	width:100%;
+}
+
+.contactUsForm .row textarea {
+	border:1px solid #996a0e;
+	width: 100%;
+	resize: none; 
+}
+
+.galleryImage {
+	text-align: center;
+	margin-top:3%;
+	padding: 0;
+}
+
+.galleryImage img {
+	width:90%;
+}
+
+.galleryImageDescription {
+	font-family: "fontPoppins";
+	text-align: center;
+	padding: 5px;
+}
+
+.galleryChildrensRow {
+	margin-bottom:3%;
+}
+
+#mainContentMediaMenu {
+	font-family: "fontPoppins";
+}
+
+.mediaContainer {
+	margin-top:3%;
+	margin-bottom:3%;
+}
+
+.mediaBooks {
+	width:80%;
+}
+
+#mainContentMediaMenu .nav-pills>li {
+	background-color: transparent;
+}
+
+#mainContentMediaMenu .nav-pills>li.active>a,
+#mainContentMediaMenu .nav-pills>li.active>a:hover,
+#mainContentMediaMenu .nav-pills>li>a:hover {
+	background-color: transparent;
+}
+
+#mainContentMediaMenu .nav-pills>li.active>a[data-toggle="pill"],
+#mainContentMediaMenuiaMenu .nav-pills>li.active>a[data-toggle="pill"]:hover,
+#mainContentMediaMenu .nav-pills>li>a[data-toggle="pill"]:hover {
+	color:#d8323d;
+}
+
+.mediaContainer iframe {
+	width:100%;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+
+.bookImageContainer {
+	background-image: url('../images/background_seamless_pattern.png');
+	color:#996a0e;
+	font-size:16px;
+	text-align: center;
+	padding-left:0;
+	padding-right:0;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+
+.bookDescription {
+	text-align: center;
+	color:#996a0e;
+	font-size:14px;
+	margin-top:2%;
+	padding-bottom:2%;
+}
+
+.bookDescription .btn-primary,
+.bookDescription .btn-primary>a {
+	color:#ffffff;
+	background-color:#d8323d;
+	border:0px;
+	margin-top:1%;
+}
+
+.bookDescription .btn-primary:hover,
+.bookDescription .btn-primary>a:hover {
+	color:#ffffff;
+	background-color:#d8323d;
+	border:0px;
+	text-decoration: none;
+}
