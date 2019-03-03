@@ -106,7 +106,7 @@ width: 80%;
 }
 
 .background {
-	background: url("../images/banner-background.jpg");
+	background: url("../images/banner-background.png");
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -567,7 +567,7 @@ z-index: 1;
 	font-family:"fontPoppins";
 	text-align: center;
 	color: #996a0e;
-	background: url('../images/background_off_white.png');
+	background: url('../images/background_seamless_pattern.png');
 	padding-bottom: 3%;
     padding-top: 1%;
 }
@@ -660,6 +660,8 @@ z-index: 1;
 	font-family: "fontPoppins";
 	text-align: center;
 	padding: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 .galleryChildrensRow {
