@@ -630,6 +630,10 @@ z-index: 1;
 	resize: none; 
 }
 
+.labelContactUs {
+	margin-left:3%;
+}
+
 .contactButtonRow {
 	text-align: center !important;
 }
@@ -638,7 +642,6 @@ z-index: 1;
 	text-decoration: none;
 	color:#ffffff;
 }
-
 
 .contactButtonRow .btn{
 	background-color:#d8323d;
