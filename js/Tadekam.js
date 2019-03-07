@@ -13,7 +13,7 @@ function menuSelected(event,menuID,isScrollToTop) {
     var mainContentSelectorClass="mainContentSelected";
     $('.' + mainContentSelectorClass).removeClass(mainContentSelectorClass);
     $('#mainContent' + selectedMenu).addClass(mainContentSelectorClass);
-    if(!menuID.includes(suffixFooter)) {
+    if(!(menuID.indexOf(suffixFooter) > -1)) {
         $('#buttonHamburgerClose').click();
     }
     if(isScrollToTop) {

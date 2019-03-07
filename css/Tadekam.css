@@ -85,6 +85,7 @@ width: 80%;
 	display:none;
 	overflow-x:hidden;
 	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
 }
 
 .mainContentSelected {
@@ -111,7 +112,9 @@ width: 80%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	animation: zoomin 15s ease-in infinite;
+	-webkit-animation: zoomin 15s ease-in infinite;
 	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
 	z-index:10;
 	height : 100%;
 }
@@ -122,9 +125,15 @@ width: 80%;
 }
 
 @keyframes zoomin {
-	0% {transform: scale(1);}
-	50% {transform: scale(1.2);}
-	100% {transform: scale(1);}
+	0% {transform: scale(1);-webkit-transform: scale(1,1);}
+	50% {transform: scale(1.2);-webkit-transform: scale(1.2,1.2);}
+	100% {transform: scale(1);-webkit-transform: scale(1,1);}
+}
+
+@-webkit-keyframes zoomin {
+	0% {transform: scale(1);-webkit-transform: scale(1,1);}
+	50% {transform: scale(1.2);-webkit-transform: scale(1.2,1.2);}
+	100% {transform: scale(1);-webkit-transform: scale(1,1);}
 }
 
 .contentHolder {
@@ -147,6 +156,7 @@ width: 80%;
 	text-align : center;
 	opacity : 1;
 	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
 	margin : 0;
 	overflow : hidden;
 	color : #FFFFFF;
@@ -200,13 +210,23 @@ width: 80%;
 	100% {opacity: 1;}
 }
 
+@-webkit-keyframes contentAppear {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
 .contentSmaller {
 	right : 0;
-	position : absolute;
 	transition: right,rotateY .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
 }
 
 @keyframes slideinSmallLeftToRight {
+	0% {right: -100%;}
+	100% {right: 0;}
+}
+
+@-webkit-keyframes slideinSmallLeftToRight {
 	0% {right: -100%;}
 	100% {right: 0;}
 }
@@ -216,10 +236,16 @@ width: 80%;
 	100% {right: 0;}
 }
 
+@-webkit-keyframes slideinSmallRightToLeft {
+	0% {right: 100%;}
+	100% {right: 0;}
+}
+
 .flip-card {
 	background-color: transparent;
 	height: 100%;
 	perspective: 1000px;
+	-webkit-perspective: 1000px;
 }
 
 .card-left {
@@ -227,38 +253,53 @@ width: 80%;
 }
 
 .flip-card-inner {
-position: relative;
-transition: transform 1s;
-transform-style: preserve-3d;
-width: 100%;
-height: 100%;
-animation: flipBannerCard 24s infinite;
+	position: relative;
+	transition: transform 1s;
+	-webkit-transition: -webkit-transform 1s;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+	animation: flipBannerCard 24s infinite;
+	-webkit-animation: flipBannerCard 24s infinite;
 }
 
 .flip-card-front, .flip-card-back {
-position: absolute;
-width: 100%;
-height: 100%;
-backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 .flip-card-front {
-z-index: 2;
-transform: rotateY(0deg);
+	z-index: 2;
+	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
 }
 
 .flip-card-back {
-transform: rotateY(180deg);
-z-index: 1;
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	z-index: 1;
 }
 
 @keyframes flipBannerCard {
-	0% {transform: rotateY(0deg);}
-	25% {transform: rotateY(0deg);}
-	50% {transform: rotateY(180deg);}
-	68% {transform: rotateY(0deg);}
-	85% {transform: rotateY(180deg);}
-	100% {transform: rotateY(0deg);}
+	0% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
+	25% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
+	50% {transform: rotateY(180deg);-webkit-transform: rotateY(180deg);}
+	68% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
+	85% {transform: rotateY(180deg);-webkit-transform: rotateY(180deg);}
+	100% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
+}
+
+@-webkit-keyframes flipBannerCard {
+	0% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
+	25% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
+	50% {transform: rotateY(180deg);-webkit-transform: rotateY(180deg);}
+	68% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
+	85% {transform: rotateY(180deg);-webkit-transform: rotateY(180deg);}
+	100% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
 }
 
 .footer {
@@ -437,12 +478,14 @@ z-index: 1;
 
 .homeProgramsImageHolder img{
 	transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
 	cursor: pointer;
 	width:90%;
 }
 
 .homeProgramsImageHolder:hover img {
 	transform: scale(1.1);
+	-webkit-transform: scale(1.1,1.1);
 }
 
 .footerLogo {
@@ -647,6 +690,10 @@ z-index: 1;
 	background-color:#d8323d;
 	color:#ffffff;
 	border:none;
+}
+
+.bannerGallery img {
+	width:100%;
 }
 
 .galleryImage {

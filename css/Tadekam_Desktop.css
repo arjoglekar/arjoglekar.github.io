@@ -50,6 +50,7 @@
 .menuOptionText div:after,
 .menuOptionText div:before {
 	transition: all .75s;
+	-webkit-transition: all .75s;
 }
 
 .menuOptionText div {
@@ -84,6 +85,7 @@
 	margin:0;
 	display:none;
 	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
 }
 
 .mainContentSelected {
@@ -128,10 +130,12 @@
 
 .contentLeftToRight {
 	animation: slideinSmallLeftToRight 4s ease-in;
+	-webkit-animation: slideinSmallLeftToRight 4s ease-in;
 }
 
 .contentRightToLeft {
 	animation: slideinSmallRightToLeft 4s ease-in;
+	-webkit-animation: slideinSmallRightToLeft 4s ease-in;
 }
 
 .flip-card {
@@ -147,10 +151,7 @@
 }
 
 .columnFooterMenu {
-	margin-left: 2%;
-    padding: 0;
-	margin-right: 2%;
-	text-align: center;
+	padding: 0;
 }
 
 .footerRow2 {

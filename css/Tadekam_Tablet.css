@@ -58,6 +58,7 @@
 .menuOptionText div:after,
 .menuOptionText div:before {
 	transition: all .75s;
+	-webkit-transition: all .75s;
 }
 
 .menuOptionText div {
@@ -129,6 +130,7 @@
 
 .flip-card-inner {
 	animation: flipBannerCard 18s infinite;
+	-webkit-animation: flipBannerCard 18s infinite;
 }
 
 @keyframes flipBannerCard {
@@ -138,6 +140,15 @@
 	60% {transform: rotateY(0deg);}
 	80% {transform: rotateY(180deg);}
 	100% {transform: rotateY(0deg);}
+}
+
+@keyframes flipBannerCard {
+	0% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
+	10% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
+	30% {transform: rotateY(180deg);-webkit-transform: rotateY(180deg);}
+	60% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
+	80% {transform: rotateY(180deg);-webkit-transform: rotateY(180deg);}
+	100% {transform: rotateY(0deg);-webkit-transform: rotateY(0deg);}
 }
 
 .columnFooterInfo {
