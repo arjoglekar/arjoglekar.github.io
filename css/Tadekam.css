@@ -109,6 +109,7 @@ width: 80%;
 .background {
 	background: url("../images/banner-background.png");
 	background-size: cover;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	animation: zoomin 15s ease-in infinite;
 	-webkit-animation: zoomin 15s ease-in infinite;
