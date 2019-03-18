@@ -101,6 +101,10 @@
 	height : 50%;
 }
 
+.background {
+	background-attachment: fixed;
+}
+
 .column1 {
 	left : 6%;
 	top : 42%;
