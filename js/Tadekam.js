@@ -55,11 +55,27 @@ function submitContact(event) {
             success:function() {
                 $('#errorArea').html("Email has been sent. You will be contacted shortly.");
                 $('#errorArea').css('color','green');
+                $('#textboxName').val("");
+                $('#textboxEmail').val("");
+                $('#textboxPhone').val("");
+                $('#textareaMessage').val("");
+                resetContactFormStatus();
             },
             error:function() {
                 $('#errorArea').html("Email has not been sent. Please contact the administrator on the given contact details!!!");
                 $('#errorArea').css('color','#d8323d');
+                resetContactFormStatus();
             }
         });
     }
+}
+
+function resetContactFormStatus() {
+    var counter = 0;
+    var interval = setInterval(function() {
+        counter++;
+        if (counter == 10) {
+            $('#errorArea').html("");
+        }
+    }, 1000);
 }
