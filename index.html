@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<title>Swapnali</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/logo.png" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/Swapnali.css">
+		<link rel="stylesheet" media='(min-width: 1200px)' href="css/Swapnali_Desktop.css">
+		<link rel="stylesheet" media='(min-width: 380px) and (max-width: 600px)' href="css/Swapnali_Mobile.css">
+		<script src="jquery/jquery-3.3.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/Swapnali.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row header">
+				<div class="col-xs-3 col-md-2 logoHolder">
+					<a class="logo" id="PortfolioMenu" onclick="menuSelected(event,this.id)">
+						<div>
+							<img src='images/logo.png'/>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-7">
+				</div>
+				<div class="col-md-3 flatMenu">
+					<div class="col-md-4 menuOption">
+						<a class="menuOptionText menuOptionTextSelected" id="PortfolioMenu" onclick="menuSelected(event,this.id)">
+							<div>Portfolio</div>
+						</a>
+					</div>
+					<div class="col-md-4 menuOption">
+						<a class="menuOptionText" id="AboutMeMenu" onclick="menuSelected(event,this.id)">
+							<div>About Me</div>
+						</a>
+					</div>
+					<div class="col-md-4 menuOption">
+						<a class="menuOptionText" id="ConnectMenu" onclick="menuSelected(event,this.id)">
+							<div>Connect</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-9 hamburgerMenu">
+					<button class=" button navbar-toggler hamburgerButton" type="button" data-toggle="collapse" data-target="#menuNavbar">
+						<span class="glyphicon glyphicon-menu-hamburger"></span>
+					</button>
+				</div>
+				<div class="col-xs-12 navbar-collapse collapse" id="menuNavbar" style="height:0px;">
+					<button id="buttonHamburgerClose" class=" button navbar-toggler hamburgerButton" type="button" data-toggle="collapse" data-target="#menuNavbar">
+						<span class="glyphicon glyphicon-remove-circle"></span>
+					</button>
+					<ul class="navbar-nav hamburgerMenuList">
+						<li class="nav-item">
+							<div class="menuOption">
+								<a class="menuOptionText menuOptionTextSelected" id="PortfolioMenuHamburger" onclick="menuSelected(event,this.id)">
+									<div>Portfolio</div>
+								</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<div class="menuOption">
+								<a class="menuOptionText" id="AboutMeMenuHamburger" onclick="menuSelected(event,this.id)">
+									<div>About Me</div>
+								</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<div class="menuOption">
+								<a class="menuOptionText" id="ConnectMenuHamburger" onclick="menuSelected(event,this.id)">
+									<div>Connect</div>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mainContent mainContentSelected" id="mainContentPortfolioMenu">
+				<div class="col-md-4 workImage">
+						<img src="images/banner-background.jpg"/>
+					</div>
+					<div class="col-md-4 workImage">
+						<img src="images/banner-background.jpg"/>
+					</div>
+					<div class="col-md-4 workImage">
+						<img src="images/banner-background.jpg"/>
+				</div>
+			</div>
+			<div class="row mainContent" id="mainContentAboutMeMenu">
+				About Swapnali
+			</div>
+			<div class="row mainContent" id="mainContentConnectMenu">
+				Connect
+			</div>
+			<div class="row footerBand">
+				Copyright 2020. All Rights Reserved with swapnali.in
+			</div>
+		</div>
+	</body>
+</html>
