@@ -104,3 +104,11 @@
 .aboutMeContent {
 	text-align: center;
 }
+
+.connectImageHolder img {
+	width : 100%;
+}
+
+.connectContent {
+	text-align: center;
+}
