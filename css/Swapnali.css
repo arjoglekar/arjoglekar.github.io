@@ -1,0 +1,157 @@
+@font-face {
+	font-family: "fontKarlaRegular";
+	src: url("../fonts/Karla-Regular.ttf");
+}
+  
+
+body {
+	font-family: "fontKarlaRegular";
+	overflow-x: hidden;
+}
+
+.container-fluid {
+	padding : 0;
+}
+
+.header {
+	height : 18%;
+	margin : 0;
+}
+
+.logoHolder {
+	display:table;
+	text-align:center;
+	height:100%;
+	padding : 0;
+	border-radius: 0 !important;
+}
+
+.logo {
+	display:table-cell;
+	vertical-align:middle;
+	border : 0;
+	cursor:pointer;
+	border-radius: 0 !important;
+}
+
+.flatMenu {
+	display : inline-block;
+}
+
+.hamburgerMenu {
+	display : inline-block;
+}
+
+/* .menuOption {
+	display:table;
+	text-align:center;
+	height:100%;
+	padding : 0;
+	border-radius: 0 !important;
+	cursor : pointer;
+}
+
+.menuOptionText {
+	display:table-cell;
+	vertical-align:middle;
+	border : 0;
+	color : #996a0e;
+	cursor:pointer;
+	font-size:15px;
+	border-radius: 0 !important;
+}
+
+.menuOptionText:hover {
+	color : #996a0e;
+	text-decoration:none;
+}
+
+.menuOptionTextSelected {
+	color : #996a0e;
+	text-decoration: line-through;
+} */
+
+/* .menuOptionTextSelected div:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100% !important;
+	content: '';
+	color: transparent;
+	background: #996a0e;
+	height: 1px;
+} */
+
+/* .menuOptionText div,
+.menuOptionText div:after,
+.menuOptionText div:before {
+	transition: all .75s;
+}
+
+.menuOptionText div {
+  position: relative;
+  height: 35px;
+  width: 80%;
+} */
+
+/* .menuOptionText div:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  color: transparent;
+  background: #996a0e;
+  height: 1px;
+}
+.menuOptionText:hover div:after {
+  width: 100%;
+  color : #996a0e;
+} */
+
+.mainContent {
+	position:relative;
+	width:100%;
+	top:15%;
+	padding : 0;
+	margin:0;
+	display:none;
+	transition: all 1s ease-in-out;
+}
+
+.mainContentSelected {
+	display:block;
+}
+
+.footerBand {
+	background-color : #996a0e;
+	color : #ffffff;
+	text-align: center;
+	font-size : 12px;
+	line-height:50px;
+	margin : 0;
+}
+
+.colLocation {
+	padding-left : 7%;;
+}
+
+.locationDetailRow {
+	line-height:40px;
+}
+
+.footerMenuRow {
+	line-height:40px;
+}
+
+.footerMenuColumn {
+	padding-left : 7%;
+}
+
+.footerMenuLogo {
+	width : 100%;
+}

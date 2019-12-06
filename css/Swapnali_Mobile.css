@@ -1,0 +1,53 @@
+.flatMenu {
+	display : none;
+}
+
+.hamburgerMenu {
+	padding : 0;
+}
+
+.hamburgerButton {
+	float : right;
+}
+
+#menuNavbar {
+	height : 100%;
+	position: absolute;
+	top:0;
+	margin:0;
+	padding:0;
+	background-color : #000000 !important;
+	opacity:0.8;
+	z-index:100;
+	transition:all 1s ease-in;
+	border:0px;
+	min-height:0px;
+}
+
+.collapse {
+	display:block !important;
+	height:0;
+	overflow-y:hidden;
+}
+
+.hamburgerMenuList {
+	text-align:center;
+	padding : 0;
+	list-style: none;
+	margin:0;
+}
+
+.menuOption {
+	display : inline-block;
+	text-align : center;
+	height:auto;
+	width:100%;
+}
+
+ .menuOptionText {
+	display:inline;
+}
+
+.menuOptionText div {
+	width: 100%;
+}
