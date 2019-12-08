@@ -2,12 +2,30 @@
 	display : none !important;
 }
 
+.header {
+	height : 15%;
+}
+
 .hamburgerMenu {
-	padding : 0;
+	padding: 0;
+    height: 100%;
+    padding-right: 2%;
 }
 
 .hamburgerButton {
-	float : right;
+	float: right;
+    background-color: transparent;
+    border: 0px;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    padding-right: 5%;
+    padding-top: 3%;
+}
+
+.hamburgerButton img {
+    height: 30px;
+    width: 30px;
 }
 
 #menuNavbar {
@@ -50,4 +68,19 @@
 
 .menuOptionText div {
 	width: 100%;
+}
+
+.hamburgerMenu {
+	text-align:center;
+}
+
+.workImage {
+	padding-right:10px;
+	padding-left:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.workImage img {
+	width:100%;
 }
