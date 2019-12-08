@@ -1,5 +1,5 @@
 .flatMenu {
-	display : none;
+	display : none !important;
 }
 
 .hamburgerMenu {
