@@ -120,6 +120,10 @@
 	text-align: center;
 }
 
+.aboutMeImageHolder img {
+	width : 100%;
+}
+
 .connectImageHolder img {
 	width : 100%;
 }

@@ -127,31 +127,10 @@ body {
 	display:block;
 }
 
-.footerBand {
-	background-color : #996a0e;
-	color : #ffffff;
-	text-align: center;
-	font-size : 12px;
-	line-height:50px;
-	margin : 0;
-}
-
 .colLocation {
 	padding-left : 7%;;
 }
 
 .locationDetailRow {
 	line-height:40px;
-}
-
-.footerMenuRow {
-	line-height:40px;
-}
-
-.footerMenuColumn {
-	padding-left : 7%;
-}
-
-.footerMenuLogo {
-	width : 100%;
 }
