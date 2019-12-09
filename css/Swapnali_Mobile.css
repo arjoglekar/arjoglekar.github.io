@@ -1,15 +1,16 @@
-.flatMenu {
+/* .flatMenu {
 	display : none !important;
-}
+} */
 
 .header {
-	height : 15%;
+	height : auto;
 }
 
 .hamburgerMenu {
 	padding: 0;
     height: 100%;
-    padding-right: 2%;
+	padding-right: 2%;
+	display:none !important;
 }
 
 .hamburgerButton {
@@ -28,7 +29,7 @@
     width: 30px;
 }
 
-#menuNavbar {
+/* #menuNavbar {
 	height : 100%;
 	position: absolute;
 	top:0;
@@ -40,12 +41,16 @@
 	transition:all 1s ease-in;
 	border:0px;
 	min-height:0px;
-}
+} */
 
-.collapse {
+/* .collapse {
 	display:block !important;
 	height:0;
 	overflow-y:hidden;
+} */
+
+.logoHolder {
+    height: 10%;
 }
 
 .hamburgerMenuList {
@@ -59,7 +64,7 @@
 	display : inline-block;
 	text-align : center;
 	height:auto;
-	width:100%;
+	/*width:100%;*/
 }
 
  .menuOptionText {
@@ -72,6 +77,7 @@
 
 .hamburgerMenu {
 	text-align:center;
+	display:none;
 }
 
 .workImage {
@@ -83,4 +89,36 @@
 
 .workImage img {
 	width:100%;
+}
+
+#menuNavbar {
+    display: none;
+}
+
+.menuOptionText {
+	display:table-cell;
+	vertical-align:middle;
+	border : 0;
+	color : #000000;
+	cursor:pointer;
+	font-size:15px;
+	border-radius: 0 !important;
+}
+
+.menuOptionTextSelected {
+	color : #000000;
+	text-decoration: line-through;
+}
+
+.connectImageHolder img {
+	width:100%;
+}
+
+.aboutMeImageHolder img {
+	width:100%;
+}
+
+.aboutMeContent {
+    text-align: center;
+    padding-top: 5px;
 }

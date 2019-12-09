@@ -5,7 +5,7 @@ function menuSelected(event,menuID) {
     var menuSelectorClass="menuOptionTextSelected";
     $('.' + menuSelectorClass).removeClass(menuSelectorClass);
     $('.menuOptionText#' + menuID).addClass(menuSelectorClass);
-    $('#' + menuID + "Hamburger").addClass(menuSelectorClass);
+    //$('#' + menuID + "Hamburger").addClass(menuSelectorClass);
     var mainContentSelectorClass="mainContentSelected";
     $('.' + mainContentSelectorClass).removeClass(mainContentSelectorClass);
     $('#mainContent' + menuID).addClass(mainContentSelectorClass);
