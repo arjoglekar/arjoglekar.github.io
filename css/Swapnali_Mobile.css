@@ -106,8 +106,8 @@
 }
 
 .menuOptionTextSelected {
-	color : #000000;
-	text-decoration: line-through;
+	color : #000000 !important;
+	text-decoration: line-through !important;
 }
 
 .connectImageHolder img {
