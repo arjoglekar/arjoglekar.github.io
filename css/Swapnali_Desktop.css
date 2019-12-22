@@ -106,3 +106,19 @@
 .connectContent {
 	text-align: center;
 }
+
+.headerSocialMedia {
+	text-align:right;
+}
+
+.headerSocialMedia span {
+	cursor: pointer;
+}
+
+.headerSocialMedia span img {
+	margin-top:20px;
+	margin-right:5px;
+	margin-left:5px;
+	height:15px;
+	width:15px;
+}
