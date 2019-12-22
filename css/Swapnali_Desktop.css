@@ -34,19 +34,6 @@
 	text-decoration: line-through;
 }
 
-/* .menuOptionTextSelected div:after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 100% !important;
-	content: '';
-	color: transparent;
-	background: #000000;
-	height: 1px;
-} */
-
 .menuOptionText div,
 .menuOptionText div:after,
 .menuOptionText div:before {
@@ -58,23 +45,6 @@
   height: 35px;
   width: 80%;
 }
-
-/* .menuOptionText div:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '';
-  color: transparent;
-  background: #000000;
-  height: 1px;
-}
-.menuOptionText:hover div:after {
-  width: 100%;
-  color : #000000;
-} */
 
 .mainContent {
 	position:relative;
@@ -110,10 +80,27 @@
     height: 100%;
 	opacity: 0;
 	transition: opacity 0.5s;
+	display:table;
+	text-decoration: none;
 }
+
 .workImage:hover .after {
 	opacity : 1;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .8);
+}
+
+.portfolioInfo {
+    display: table-cell;
+    font-size: 22px;
+    color: white;
+    vertical-align: middle;
+	text-align: center;
+	font-family: "fontKarlaRegular";
+	font-weight:normal;
+}
+
+.portfolioInfo span {
+	font-size:14px;
 }
 
 .aboutMeContent {
