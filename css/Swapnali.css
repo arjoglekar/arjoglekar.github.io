@@ -134,30 +134,3 @@ body {
 .locationDetailRow {
 	line-height:40px;
 }
-
-.workImage .after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	opacity: 0;
-	transition: opacity 0.5s;
-	display:table;
-	text-decoration: none;
-}
-
-.workImage:hover .after {
-	opacity : 1;
-    background: rgba(0, 0, 0, .8);
-}
-
-.portfolioInfo {
-    display: table-cell;
-    font-size: 22px;
-    color: white;
-    vertical-align: middle;
-	text-align: center;
-	font-family: "fontKarlaRegular";
-	font-weight:normal;
-}
