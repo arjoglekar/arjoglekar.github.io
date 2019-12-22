@@ -72,18 +72,6 @@
 	width:100%;
 }
 
-.workImage .after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	opacity: 0;
-	transition: opacity 0.5s;
-	display:table;
-	text-decoration: none;
-}
-
 .workImage:hover .after {
 	opacity : 1;
     background: rgba(0, 0, 0, .8);

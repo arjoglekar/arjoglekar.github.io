@@ -92,7 +92,7 @@
 }
 
 .workImage .after {
-	display : none;
+	opacity:0;
 }
 
 #menuNavbar {
