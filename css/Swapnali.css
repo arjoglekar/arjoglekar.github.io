@@ -146,3 +146,31 @@ body {
 	display:table;
 	text-decoration: none;
 }
+
+.noPadding {
+	padding :0;
+} 
+
+.noMargin {
+	margin :0;
+}
+
+textarea {
+	resize: none;
+	background: lightgray;
+	border: none;
+	width: 100%;
+}
+
+input {
+	background: lightgray;
+	border: none;
+	width: 100%;
+}
+
+button {
+	background: black;
+    color: white;
+    border: none;
+    width: 100%;
+}

@@ -91,10 +91,23 @@
 					</a>
 				</div>
 				<div class="col-xs-12 col-md-4 workImage">
-				<img src="images/Nanostics.png"/>
-					<a class="after" href="http://tadekam.com/" target="_blank">
-						<div class="portfolioInfo">Nanostics</div>
+					<img src="images/Nanostics.png"/>
+					<a class="after">
+						<div class="portfolioInfo" id="PortfolioDetail" name="Nanostics" onclick="menuSelected(event,this.id)">Nanostics</div>
 					</a>
+				</div>
+				<div class="col-xs-12 col-md-4 workImage">
+					<img src="images/Calligraphy.png"/>
+					<a class="after">
+						<div class="portfolioInfo" id="PortfolioDetail" name="Calligraphy" onclick="menuSelected(event,this.id)">Calligraphy</div>
+					</a>
+				</div>
+			</div>
+			<div class="row mainContent" id="mainContentPortfolioDetail">
+				<div class="row portfolioDetailImageHolder">
+					<div class="row col-md-12">
+						<img src="images/Calligraphy_Detail.png"/>
+					</div>
 				</div>
 			</div>
 			<div class="row mainContent" id="mainContentAboutMeMenu">
@@ -117,16 +130,44 @@
 				</div>
 			</div>
 			<div class="row mainContent" id="mainContentConnectMenu">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-                    <div class="connectImageHolder">
-                        <img src="images/connect.png"/>
-                    </div>
-                    <div class="connectContent">
-                        Lorem Ipsum
-                    </div>
+				<div class="col-md-7 connectImageHolder">
+                    <img src="images/connect.png"/>
                 </div>
-				<div class="col-md-2"></div>
+				<div class="col-md-5 connectContent">
+					<div class="row noPadding noMargin">
+						<div class="col-md-3 noPadding noMargin"></div>
+						<div class="col-md-6 noPadding noMargin">
+							<div class="row noPadding noMargin connectContentRow">
+								<div class="col-md-4 connectIconHolder"><img src="images/fb_logo.png"/></div>
+								<div class="col-md-8">+91 8698081168</div>
+							</div>
+							<div class="row noPadding noMargin connectContentRow">
+								<div class="col-md-4 connectIconHolder"><img src="images/fb_logo.png"/></div>
+								<div class="col-md-8">swapsk.8@gmail.com</div>
+							</div>
+							<div class="row noPadding noMargin connectContentRow">
+								<div class="col-md-4 connectIconHolder"><img src="images/fb_logo.png"/></div>
+								<div class="col-md-8">Pune, Maharashtra</div>
+							</div>
+							<div class="row noPadding noMargin connectContentRow">
+								<div class="col-md-4">Name</div>
+								<div class="col-md-8"><input type="textbox" name="name"/></div>
+							</div>
+							<div class="row noPadding noMargin connectContentRow">
+								<div class="col-md-4">Email</div>
+								<div class="col-md-8"><input type="textbox" name="email"/></div>
+							</div>
+							<div class="row noPadding noMargin connectContentRow">
+								<div class="col-md-4">Message</div>
+								<div class="col-md-8"><textarea name="message" rows="5"></textarea></div>
+							</div>
+							<div class="row noPadding noMargin connectContentRow">
+								<div class="col-md-4"><button name="send">Send</button></div>
+							</div>
+						</div>
+						<div class="col-md-3 noPadding noMargin"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
