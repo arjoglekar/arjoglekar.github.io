@@ -86,8 +86,8 @@
 				</div>
 				<div class="col-xs-12 col-md-4 workImage">
 					<img src="images/Esbee.png"/>
-					<a class="after" href="images/Esbee_Detail.gif" target="_blank">
-						<div class="portfolioInfo">Esbee</div>
+					<a class="after">
+						<div class="portfolioInfo" id="PortfolioDetail_Esbee" onclick="portfolioSelected(event,this.id)">Esbee</div>
 					</a>
 				</div>
 				<div class="col-xs-12 col-md-4 workImage">
@@ -99,14 +99,19 @@
 				<div class="col-xs-12 col-md-4 workImage">
 					<img src="images/Calligraphy.png"/>
 					<a class="after">
-						<div class="portfolioInfo" id="PortfolioDetail" name="Calligraphy" onclick="menuSelected(event,this.id)">Calligraphy</div>
+						<div class="portfolioInfo" id="PortfolioDetail_Calligraphy" onclick="portfolioSelected(event,this.id)">Calligraphy</div>
 					</a>
 				</div>
 			</div>
 			<div class="row mainContent" id="mainContentPortfolioDetail">
-				<div class="row portfolioDetailImageHolder">
+				<div class="row portfolioDetailImageHolder" id="portfolioDetailCalligraphy">
 					<div class="row col-md-12">
 						<img src="images/Calligraphy_Detail.png"/>
+					</div>
+				</div>
+				<div class="row portfolioDetailImageHolder" id="portfolioDetailEsbee">
+					<div class="row col-md-12">
+						<img src="images/Esbee_Detail.gif"/>
 					</div>
 				</div>
 			</div>

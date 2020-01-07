@@ -174,3 +174,11 @@ button {
     border: none;
     width: 100%;
 }
+
+.portfolioDetailImageHolder {
+	display:none;
+}
+
+.portfolioDetailImageHolderSelected {
+	display:block;
+}
