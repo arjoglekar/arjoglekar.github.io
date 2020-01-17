@@ -18,6 +18,10 @@ body {
 	margin : 0;
 }
 
+.headerRemove {
+	display: none;
+}
+
 .logoHolder {
 	display:table;
 	text-align:center;
@@ -41,77 +45,6 @@ body {
 .hamburgerMenu {
 	display : inline-block;
 }
-
-/* .menuOption {
-	display:table;
-	text-align:center;
-	height:100%;
-	padding : 0;
-	border-radius: 0 !important;
-	cursor : pointer;
-}
-
-.menuOptionText {
-	display:table-cell;
-	vertical-align:middle;
-	border : 0;
-	color : #996a0e;
-	cursor:pointer;
-	font-size:15px;
-	border-radius: 0 !important;
-}
-
-.menuOptionText:hover {
-	color : #996a0e;
-	text-decoration:none;
-}
-
-.menuOptionTextSelected {
-	color : #996a0e;
-	text-decoration: line-through;
-} */
-
-/* .menuOptionTextSelected div:after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 100% !important;
-	content: '';
-	color: transparent;
-	background: #996a0e;
-	height: 1px;
-} */
-
-/* .menuOptionText div,
-.menuOptionText div:after,
-.menuOptionText div:before {
-	transition: all .75s;
-}
-
-.menuOptionText div {
-  position: relative;
-  height: 35px;
-  width: 80%;
-} */
-
-/* .menuOptionText div:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '';
-  color: transparent;
-  background: #996a0e;
-  height: 1px;
-}
-.menuOptionText:hover div:after {
-  width: 100%;
-  color : #996a0e;
-} */
 
 .mainContent {
 	position:relative;
@@ -181,4 +114,12 @@ button {
 
 .portfolioDetailImageHolderSelected {
 	display:block;
+}
+
+.closeButton img {
+	float: right;
+    margin-right: 15px;
+    height: 20px;
+	width: 20px;
+	cursor:pointer;
 }

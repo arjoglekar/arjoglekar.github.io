@@ -6,6 +6,9 @@ function menuSelected(event,menuID) {
     var mainContentSelectorClass="mainContentSelected";
     $('.' + mainContentSelectorClass).removeClass(mainContentSelectorClass);
     $('#mainContent' + menuID).addClass(mainContentSelectorClass);
+    $('.header').removeClass('headerRemove');
+    var portfolioSelectorClass="portfolioDetailImageHolderSelected";
+    $('.' + portfolioSelectorClass).removeClass(portfolioSelectorClass);
     $('#buttonHamburgerClose').click();
 }
 
@@ -16,4 +19,6 @@ function portfolioSelected(event,portfolioDetailName) {
     var portfolioSelectorClass="portfolioDetailImageHolderSelected";
     $('.' + portfolioSelectorClass).removeClass(portfolioSelectorClass);
     $('#portfolioDetail' + portfolioName).addClass(portfolioSelectorClass);
+    $('.header').addClass('headerRemove');
+    window.scrollTo(0,0);
 }
