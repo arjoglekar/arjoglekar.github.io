@@ -61,14 +61,14 @@
 }
 
 .menuOption {
-	display : inline-block;
+	display : table;
 	text-align : center;
 	height:auto;
 	/*width:100%;*/
 }
 
  .menuOptionText {
-	display:inline;
+	display:table-cell;
 }
 
 .menuOptionText div {
