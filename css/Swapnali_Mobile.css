@@ -81,10 +81,10 @@
 }
 
 .workImage {
-	padding-right:10px;
-	padding-left:10px;
-	padding-top:5px;
-	padding-bottom:5px;
+	padding-right:0px;
+	padding-left:0px;
+	margin-top:5px;
+	margin-bottom:5px;
 }
 
 .workImage img {
@@ -142,4 +142,37 @@
 	top:45%;
 	height:100%;
 	width:100%;
+}
+
+.connectContentRow {
+	margin-top : 10px;
+}
+
+.aboutMeImageHolder {
+	padding :0;
+	margin-bottom:10px;
+}
+
+.connectImageHolder {
+	padding :0;
+}
+
+.mainContent {
+	margin-top:10px;
+}
+
+.sendButtonHolder {
+	padding:0;
+}
+
+#portfolioDetailCalligraphy img {
+	max-width:100%;
+}
+
+.closeButton {
+    padding-right: 10px;
+}
+
+button {
+	padding:10px;
 }
