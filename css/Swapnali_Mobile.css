@@ -170,3 +170,7 @@ button {
 .portfolioDetailImageHolder img {
 	max-width : 100%;
 }
+
+.closeButton img {
+    margin-right: 30px;
+}
