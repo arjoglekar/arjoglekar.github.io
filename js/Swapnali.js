@@ -12,7 +12,7 @@ function menuSelected(event,menuID) {
     $('#buttonHamburgerClose').click();
 }
 
-function portfolioSelected(event,portfolioDetailName) {
+function portfolioSelected(event,portfolioDetailName,displayValue) {
     var menuID = portfolioDetailName.split("_")[0];
     var portfolioName = portfolioDetailName.split("_")[1];
     menuSelected(event,menuID);
@@ -20,5 +20,6 @@ function portfolioSelected(event,portfolioDetailName) {
     $('.' + portfolioSelectorClass).removeClass(portfolioSelectorClass);
     $('#portfolioDetail' + portfolioName).addClass(portfolioSelectorClass);
     $('.header').addClass('headerRemove');
+    $('#portfolioDetailDisplayValue').text(displayValue);
     window.scrollTo(0,0);
 }

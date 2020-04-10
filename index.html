@@ -62,7 +62,7 @@
 				</div>
 				<div class="col-xs-12 col-md-4 workImage">
 					<img src="images/Daawat_e_kebab.png"/>
-					<a class="after" href="http://tadekam.com/" target="_blank">
+					<a class="after" id="PortfolioDetail_DaawatEKebab" onclick="portfolioSelected(event,this.id,'Daawat-E-Kabab')">
 						<div class="portfolioInfo">Daawat-E-Kabab</div>
 					</a>
 				</div>
@@ -74,45 +74,103 @@
 				</div>
 				<div class="col-xs-12 col-md-4 workImage">
 					<img src="images/Gipoor.png"/>
-					<a class="after" href="http://tadekam.com/" target="_blank">
+					<a class="after" id="PortfolioDetail_Gipoor" onclick="portfolioSelected(event,this.id,'Gipoor')">
 						<div class="portfolioInfo">Gipoor</div>
 					</a>
 				</div>
 				<div class="col-xs-12 col-md-4 workImage">
 					<img src="images/Cookie_Bites.png"/>
-					<a class="after" href="http://tadekam.com/" target="_blank">
+					<a class="after" id="PortfolioDetail_CookieBites" onclick="portfolioSelected(event,this.id,'Cookie Bites')">
 						<div class="portfolioInfo">Cookie Bites</div>
 					</a>
 				</div>
 				<div class="col-xs-12 col-md-4 workImage">
-					<img src="images/Esbee.png"/>
-					<a class="after">
-						<div class="portfolioInfo" id="PortfolioDetail_Esbee" onclick="portfolioSelected(event,this.id)">Esbee</div>
+					<img src="images/usaas.png"/>
+					<a class="after" id="PortfolioDetail_Usaas" onclick="portfolioSelected(event,this.id,'Usaas')">
+						<div class="portfolioInfo">Usaas</div>
 					</a>
 				</div>
 				<div class="col-xs-12 col-md-4 workImage">
-					<img src="images/Nanostics.png"/>
-					<a class="after" href="http://nanosticsdx.com/" target="_blank">
-						<div class="portfolioInfo" name="Nanostics">Nanostics</div>
-					</a>
+					<img src="images/empowering_souls.png"/>
+					<a class="after" id="PortfolioDetail_EmpoweringSouls" onclick="portfolioSelected(event,this.id,'Empowering Souls')">
+							<div class="portfolioInfo">Empowering Souls</div>
+						</a>
 				</div>
 				<div class="col-xs-12 col-md-4 workImage">
 					<img src="images/Calligraphy.png"/>
-					<a class="after">
-						<div class="portfolioInfo" id="PortfolioDetail_Calligraphy" onclick="portfolioSelected(event,this.id)">Calligraphy</div>
+					<a class="after" id="PortfolioDetail_Calligraphy" onclick="portfolioSelected(event,this.id,'Calligraphy')">
+						<div class="portfolioInfo">Calligraphy</div>
 					</a>
 				</div>
 			</div>
 			<div class="row mainContent" id="mainContentPortfolioDetail">
-				<div class="row closeButton"><img src="images/close.png" id="PortfolioMenu" onclick="menuSelected(event,this.id)"></div>
+				<div class="row portfolioDetailHeader">
+					<div class="col-xs-10 col-md-10" id="portfolioDetailDisplayValue"></div>
+					<div class="col-xs-2 col-md-2 closeButton">
+						<img src="images/close.png" id="PortfolioMenu" onclick="menuSelected(event,this.id)">
+					</div>
+				</div>
 				<div class="row portfolioDetailImageHolder" id="portfolioDetailCalligraphy">
-					<div class="row col-md-12">
+					<div class="row col-md-12 noPadding noMargin">
 						<img src="images/Calligraphy_Detail.png"/>
 					</div>
 				</div>
-				<div class="row portfolioDetailImageHolder" id="portfolioDetailEsbee">
-					<div class="row col-md-12">
-						<img src="images/Esbee_Detail.gif" class="centerAlignImage"/>
+				<div class="row portfolioDetailImageHolder" id="portfolioDetailGipoor">
+					<div class="row col-md-12 noPadding noMargin">
+						<img src="images/Gipoor_Detail.png" class="centerAlignImage"/>
+					</div>
+					<div class="row col-xs-12 col-md-12 portfolioDetailText">
+						<div class="col-xs-offset-1 col-xs-11 col-md-12">
+							Gipoor, a logo created for Iran based Fashion designer was a special experience. 
+						</div>
+						<div class="col-xs-offset-1 col-xs-11 col-md-12">
+							The design is a reflection of Iran's traditional fabric pattern named Dantel, having gipoor embedded in the logo.
+						</div>
+					</div>
+				</div>
+				<div class="row portfolioDetailImageHolder" id="portfolioDetailCookieBites">
+					<div class="row col-md-12 noPadding noMargin">
+						<img src="images/cookie_bites_detail.png" class="centerAlignImage"/>
+					</div>
+					<div class="row col-xs-12 col-md-12 portfolioDetailText">
+						<div class="col-xs-offset-1 col-xs-11 col-md-12">
+							Cookie bites is a Pune's establishing cookie brand having delicious flavours and wide range of cookies.
+						</div>
+						<div class="col-xs-offset-1 col-xs-11 col-md-12">
+							A simple yet catchy logo which is apt representation for everybody's favourite munchies, cookies!
+						</div>
+					</div>
+				</div>
+				<div class="row portfolioDetailImageHolder" id="portfolioDetailEmpoweringSouls">
+					<div class="row col-md-12 noPadding noMargin">
+						<img src="images/empowering_souls_detail.png" class="centerAlignImage"/>
+					</div>
+				</div>
+				<div class="row portfolioDetailImageHolder" id="portfolioDetailDaawatEKebab">
+					<div class="row col-md-12 noPadding noMargin">
+						<img src="images/Daawat_e_kebab.png" class="centerAlignImage"/>
+					</div>
+					<div class="row col-xs-12 col-md-12 portfolioDetailText">
+						<div class="col-xs-offset-1 col-xs-11 col-md-12">
+							A Typographical logotype for the Pune's restaurant. Daawt - e - kebab is all about feast of kebabs which is 
+							a middle eastern food speciality popular among the world.
+						</div>
+					</div>
+				</div>
+				<div class="row portfolioDetailImageHolder" id="portfolioDetailUsaas">
+					<div class="row col-md-12 noPadding noMargin">
+						<img src="images/usaas_detail.png" class="centerAlignImage"/>
+					</div>
+					<div class="row col-xs-12 col-md-12 portfolioDetailText">
+						<div class="col-xs-offset-1 col-xs-11 col-md-12">
+							A very unique logo which a blend of Ether energy and technology resulting into energy solutions.
+						</div>
+						<div class="col-xs-offset-1 col-xs-11 col-md-12">
+							Logo has seven colors of chakras with a vector of technology network ingrained.
+						</div>
+						<div class="col-xs-offset-1 col-xs-11 col-md-12">
+							The name Usaas means a goddess of Early morning.
+						</div>
 					</div>
 				</div>
 			</div>
@@ -138,44 +196,63 @@
 				</div>
 			</div>
 			<div class="row mainContent" id="mainContentConnectMenu">
-				<div class="col-md-8 connectImageHolder">
-                    <img src="images/connect.png"/>
-                </div>
-				<div class="col-md-4 connectContent noPadding noMargin">
-					<div class="row noMargin">
-						<div class="col-md-2 noPadding noMargin"></div>
-						<div class="col-md-8 noPadding noMargin">
-							<div class="row noPadding noMargin connectContentRow">
-								<div class="col-xs-4 col-md-4 connectIconHolder"><img src="images/fb_logo.png"/></div>
-								<div class="col-xs-8 col-md-8">+91 8698081168</div>
-							</div>
-							<div class="row noPadding noMargin connectContentRow">
-								<div class="col-xs-4 col-md-4 connectIconHolder"><img src="images/fb_logo.png"/></div>
-								<div class="col-xs-8 col-md-8">swapsk.8@gmail.com</div>
-							</div>
-							<div class="row noPadding noMargin connectContentRow">
-								<div class="col-xs-4 col-md-4 connectIconHolder"><img src="images/fb_logo.png"/></div>
-								<div class="col-xs-8 col-md-8">Pune, Maharashtra</div>
-							</div>
-							<div class="row noPadding noMargin connectContentRow">
-								<div class="col-xs-4 col-md-4">Name</div>
-								<div class="col-xs-8 col-md-8"><input type="textbox" name="name"/></div>
-							</div>
-							<div class="row noPadding noMargin connectContentRow">
-								<div class="col-xs-4 col-md-4">Email</div>
-								<div class="col-xs-8 col-md-8"><input type="textbox" name="email" placeholder="email"/></div>
-							</div>
-							<div class="row noPadding noMargin connectContentRow">
-								<div class="col-xs-4 col-md-4">Message</div>
-								<div class="col-xs-8 col-md-8"><textarea name="message" rows="5"></textarea></div>
-							</div>
-							<div class="row noPadding noMargin connectContentRow">
-								<div class="col-md-4 sendButtonHolder"><button name="send">Send</button></div>
-							</div>
-						</div>
-						<div class="col-md-2 noPadding noMargin"></div>
+				<div class="row">
+					<div class="col-md-12 connectImageHolder">
+						<img src="images/connect.png"/>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-xs-12 connectText">
+								Feel free to get in touch with me to discuss new ideas, projects and opportunities that can shape up your product, brand and company.
+							</div>
+						</div>
+						<div class="row">
+							<div class="connectContent noPadding noMargin">
+								<div class="col-md-4">
+									<div class="row connectContentRow">
+										<div class="col-xs-4 col-md-2 connectIconHolder"><img src="images/phone.png"/></div>
+										<div class="col-xs-8 col-md-10 connectFormText">+91 8698081168</div>
+									</div>
+									<div class="row connectContentRow">
+										<div class="col-xs-4 col-md-2 connectIconHolder"><img src="images/send.png"/></div>
+										<div class="col-xs-8 col-md-10 connectFormText">swapsk.8@gmail.com</div>
+									</div>
+									<div class="row connectContentRow">
+										<div class="col-xs-4 col-md-2 connectIconHolder"><img src="images/pin.png"/></div>
+										<div class="col-xs-8 col-md-10 connectFormText">Pune, Maharashtra</div>
+									</div>
+									<div class="row connectContentRow">
+										<div class="col-xs-4 col-md-4 connectFormText">Follow</div>
+										<div class="col-xs-8 col-md-8 connectIconHolder connectFollow"><img src="images/fb_logo.png" style="margin-right:20px;"/><img src="images/insta_logo.png"/></div>
+									</div>
+								</div>
+								<div class="col-md-2"></div>
+								<div class="col-md-6">
+									<div class="row connectContentRow">
+										<div class="col-xs-1"></div>
+										<div class="col-xs-10 col-md-12"><input type="textbox" name="name" placeholder="Name"/></div>
+									</div>
+									<div class="row connectContentRow">
+										<div class="col-xs-1"></div>
+										<div class="col-xs-10 col-md-12"><input type="textbox" name="email" placeholder="Email"/></div>
+									</div>
+									<div class="row connectContentRow">
+										<div class="col-xs-1"></div>
+										<div class="col-xs-10 col-md-12"><textarea name="message" rows="5" placeholder="Message"></textarea></div>
+									</div>
+									<div class="row connectContentRow">
+										<div class="col-xs-1"></div>
+										<div class="col-xs-10 col-md-12" style="text-align:left;"><button name="send">Send</button></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3"></div>
 			</div>
 		</div>
 	</body>
