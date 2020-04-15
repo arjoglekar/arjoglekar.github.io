@@ -114,6 +114,7 @@
 	font-weight:normal;
 	position: relative;
 	top:45%;
+	height:100%;
 	width:100%;
 }
 
@@ -171,8 +172,4 @@
 
 .connectFollow img {
     margin-left: 20px;
-}
-
-.connectForm {
-	margin-top:30px;
 }
